@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height= "wrap_content"
+        android:text="@string/terminal_activation"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:textColor="@color/titleColor"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"/>
+
+     <TextView
+         android:id="@+id/textView2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="2.5dp"
+         android:fontFamily="sans-serif"
+          android:layout_gravity="center_vertical|center_horizontal"
+         android:text="@string/legend_terminal"
+         android:textColor="@color/legendColor"
+         android:textSize="12sp"
+         android:textStyle="bold" />
+     
+     <EditText 
+         android:id="@+id/terminal"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:hint="@string/terminal_code"
+         android:inputType="number"
+         android:layout_marginTop="30dp"
+         android:layout_gravity="center_vertical|center_horizontal"/>
+     
+     <EditText 
+         android:id="@+id/activation"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:hint="@string/activate_code"
+         android:inputType="number"
+         android:layout_marginTop="5dp"
+         android:layout_gravity="center_vertical|center_horizontal"/>
+     <Button 
+         android:id="@+id/terminal_activation"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/terminal_button"
+         android:onClick="activateTerminal"
+         android:layout_marginTop="5dp"
+         android:layout_gravity="center_vertical|center_horizontal"/>
+
+    
+
+</LinearLayout>

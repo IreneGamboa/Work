@@ -4,5 +4,13 @@
     <string name="app_name">POS</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="terminal_activation">Activar Terminal</string>
+    <string name="legend_terminal">Active su nueva terminal de pagos</string>
+    <string name="terminal_code">Codigo de Terminal</string>
+    <string name="activate_code">Codigo de Activacion</string>
+    <string name="terminal_button">Activar Terminal</string>
+    <string name="password">Contraseña</string>
+    <string name="user">Nombre de Usuario</string>
+    <string name="login_button">Ingresar</string>
 
 </resources>
