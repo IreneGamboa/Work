@@ -19,10 +19,6 @@ import com.pos.R;
 
 
 public class Menu extends SherlockFragmentActivity {
-	
-
-
-	
 
 	public class DrawerItemClickListener implements ListView.OnItemClickListener {
 
