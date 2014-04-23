@@ -12,5 +12,8 @@
     <string name="password">Contraseña</string>
     <string name="user">Nombre de Usuario</string>
     <string name="login_button">Ingresar</string>
+    <string name="venta">Venta</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
 
 </resources>
