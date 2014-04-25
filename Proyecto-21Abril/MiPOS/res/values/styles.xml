@@ -11,6 +11,13 @@
         <item name="android:typeface">monospace</item>
     </style>
     
+    <style name="Title" parent="android:Theme.Light">
+        <item name="android:layout_width">match_parent</item>
+        <item name= "android:layout_height">match_parent</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+    
     <style name="btnGray" parent="@android:style/Widget.Button">
       <item name="android:textSize">15sp</item>
        <item name="android:textStyle">bold</item>

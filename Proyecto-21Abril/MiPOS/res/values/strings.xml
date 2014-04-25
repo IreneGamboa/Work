@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <string name="app_name">MiPOS</string>
     <string name="hello_world">Hello world!</string>
@@ -10,6 +10,8 @@
     <string name="drawer_close">Close navigation drawer</string>
     <string name="continueV">Continuar</string>
     <string name="exampleV">0.00</string>
+    <string name="anulacion">Anulacion</string>
+    <string name="ajusteP">Ajuste de Propina</string>
     
 
 </resources>

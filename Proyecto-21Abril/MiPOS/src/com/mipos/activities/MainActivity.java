@@ -3,6 +3,7 @@ package com.mipos.activities;
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.MenuItem;
 import com.androidbegin.menuviewpagertutorial.R;
+import com.mipos.ajustePropina.AjustePropina;
 import com.mipos.venta.Venta;
 
 import android.support.v4.app.FragmentManager;
@@ -25,7 +26,8 @@ public class MainActivity extends SherlockFragmentActivity {
 	ActionBarDrawerToggle mDrawerToggle;
 	MenuListAdapter mMenuAdapter;
 	String[] title;
-	Fragment fragment1 = new Venta();
+	Fragment venta = new Venta();
+	Fragment ajusteP = new AjustePropina();
 	//Fragment fragment2 = new Fragment2();
 	private CharSequence mDrawerTitle;
 	private CharSequence mTitle;
@@ -127,9 +129,13 @@ public class MainActivity extends SherlockFragmentActivity {
 		// Locate Position
 		switch (position) {
 		case 0:
-			ft.replace(R.id.content_frame, fragment1);
+			ft.replace(R.id.content_frame, venta);
+			break;
+		case 1:
+			ft.replace(R.id.content_frame, ajusteP);
 			break;
 		}
+		
 		ft.commit();
 		mDrawerList.setItemChecked(position, true);
 		// Get the title followed by the position
