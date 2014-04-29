@@ -9,8 +9,11 @@ import com.mipos.venta.Venta;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.Fragment;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.widget.DrawerLayout;
 import android.view.View;
@@ -31,12 +34,23 @@ public class Menu extends SherlockFragmentActivity {
 	//Fragment fragment2 = new Fragment2();
 	private CharSequence mDrawerTitle;
 	private CharSequence mTitle;
+	//SharedPreferences prefs= PreferenceManager.getDefaultSharedPreferences(this);
+	//boolean isFirstTime = prefs.getBoolean("firstTime", true);
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		// Get the view from drawer_main.xml
 		setContentView(R.layout.drawer_main);
+		
+		/*if(isFirstTime){
+			SharedPreferences.Editor editor = prefs.edit();
+			editor.putBoolean("firstTime", false);
+			editor.commit();
+			Intent terminalActivate = new Intent (this, TerminalActivate.class);
+			startActivity(terminalActivate);
+		}*/
+	
 
 		// Get the Title
 		mTitle = mDrawerTitle = getTitle();

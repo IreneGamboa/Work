@@ -791,7 +791,8 @@ containing a value of this type.
         public static final int collections_cloud=0x7f020058;
         public static final int drawer_shadow=0x7f020059;
         public static final int ic_drawer=0x7f02005a;
-        public static final int rect_edit_text=0x7f02005b;
+        public static final int ic_launcher=0x7f02005b;
+        public static final int rect_edit_text=0x7f02005c;
     }
     public static final class id {
         public static final int abs__action_bar=0x7f040022;

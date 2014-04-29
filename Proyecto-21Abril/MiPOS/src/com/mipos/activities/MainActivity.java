@@ -4,24 +4,26 @@ import com.androidbegin.menuviewpagertutorial.R;
 
 
 
+
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 
 public class MainActivity  extends Activity {
 	
-	SharedPreferences prefs = null;
+	SharedPreferences prefs= PreferenceManager.getDefaultSharedPreferences(this);
 	boolean isFirstTime = prefs.getBoolean("firstTime", true);
 	
 	@Override
-	protected void onCreate(Bundle savedInstanceState){
+	public void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.activate_terminal);
 		
 		
 		
-		if(isFirstTime){
+		/*if(isFirstTime){
 			SharedPreferences.Editor editor = prefs.edit();
 			editor.putBoolean("firstTime", false);
 			editor.commit();
@@ -31,7 +33,7 @@ public class MainActivity  extends Activity {
 			Intent login = new Intent (this, Login.class );
 			startActivity(login);
 		}
-	}
+*/	}
 
 	
 
