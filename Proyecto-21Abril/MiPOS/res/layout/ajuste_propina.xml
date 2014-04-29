@@ -1,7 +1,8 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
 
     <LinearLayout
         android:id="@+id/linearLayout1"
@@ -14,10 +15,16 @@
             android:id="@+id/ventaC"
             style="@style/Title"
             android:text="@string/ajusteP" 
-            android:gravity="center"/>
-         
-    </LinearLayout>
+            android:gravity="center"/>   
+  </LinearLayout>    
+    
+<!--         <Listview -->
+<!-- 	        android:id="@+id/list_ajusteP" -->
+<!-- 	        android:layout_width="match_parent" -->
+<!-- 	        android:layout_height="wrap_content"> -->
+             
+<!--          </Listview> -->
 
-   
+    
+</LinearLayout>
 
-</RelativeLayout>

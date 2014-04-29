@@ -11,13 +11,15 @@
     <application        
         android:label="@string/app_name"
         android:theme="@style/Theme.Sherlock" >
-        <activity android:name="com.mipos.activities.MainActivity" >
+        <activity android:name="com.mipos.activities.Menu" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.mipos.activities.TerminalActivate"></activity>
+        <activity android:name="com.mipos.activities.Login"></activity>
     </application>
 
 </manifest>
