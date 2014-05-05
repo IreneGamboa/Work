@@ -795,7 +795,6 @@ containing a value of this type.
         public static final int rect_edit_text=0x7f02005c;
     }
     public static final class id {
-        public static final int ListView_AP=0x7f04002e;
         public static final int abs__action_bar=0x7f040022;
         public static final int abs__action_bar_container=0x7f040021;
         public static final int abs__action_bar_subtitle=0x7f040011;
@@ -833,6 +832,7 @@ containing a value of this type.
         public static final int header=0x7f04002f;
         public static final int homeAsUp=0x7f040006;
         public static final int linearLayout1=0x7f04002c;
+        public static final int list=0x7f04002e;
         public static final int listMode=0x7f040002;
         public static final int listview_drawer=0x7f040033;
         public static final int login=0x7f040036;

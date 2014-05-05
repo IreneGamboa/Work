@@ -2,68 +2,92 @@ package com.mipos.ajustePropina;
 
 
 
+import java.util.ArrayList;
+
+import android.content.Context;
 import android.os.Bundle;
-import android.util.SparseArray;
 import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ExpandableListView;
+import android.widget.ExpandableListView.OnChildClickListener;
 
+import com.actionbarsherlock.app.SherlockExpandableListActivity;
 import com.actionbarsherlock.app.SherlockFragment;
-import com.androidbegin.menuviewpagertutorial.R;
-import com.mipos.utilities.Group;
+import com.actionbarsherlock.app.SherlockFragmentActivity;
 
-public class AjustePropina extends SherlockFragment{
+
+public class AjustePropina extends SherlockFragment {
 	
-	SparseArray<Group> groups = new SparseArray<Group>();
-	//private Activity activity;
-	private View activity;
+	private ArrayList<String> parentItems = new ArrayList<String>();
+	private ArrayList<Object> childItems = new ArrayList<Object>();
 	
+	private SherlockExpandableListActivity prueba;
+
 	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {
-		View rootView = inflater.inflate(R.layout.ajuste_propina, container, false);
-		createData();
-		ExpandableListView listView = (ExpandableListView) activity.findViewById(R.id.ListView_AP);
-		 MyExpandableListAdapter adapter = new MyExpandableListAdapter(this, groups);
-		listView.setAdapter(adapter);
-		return rootView;
+	public void onCreate(Bundle savedInstanceState) {
+		
+		super.onCreate(savedInstanceState);
+		
+		// this is not really  necessary as ExpandableListActivity contains an ExpandableList
+		//setContentView(R.layout.main);
+		
+		
+		ExpandableListView expandableList =  prueba.getExpandableListView(); // you can use (ExpandableListView) findViewById(R.id.list)
+		
+		expandableList.setDividerHeight(2);
+		expandableList.setGroupIndicator(null);
+		expandableList.setClickable(true);
+
+		setGroupParents();
+		setChildData();
+
+		MyExpandableAdapter adapter = new MyExpandableAdapter(parentItems, childItems);
+		
+		adapter.setInflater((LayoutInflater) prueba.getSystemService(Context.LAYOUT_INFLATER_SERVICE), this);
+		expandableList.setAdapter(adapter);
+		expandableList.setOnChildClickListener((OnChildClickListener) this);
 	}
 
-	private void createData() {
-		// TODO Auto-generated method stub
-		for (int i = 0; i<4; i++){
-			Group group = new Group();
-			switch (i){
-			case 0:
-				group.setGroup("Venta Colones");
-				for (int j = 0; j< 3; j++){
-					group.childer.add("**********1280"+j);
-				}
-			break;
-			case 1:
-				group.setGroup("Venta Dolares");
-				for (int j = 0; j< 3; j++){
-					group.childer.add("**********1280"+j);
-				}
-			break;
-			case 2:
-				group.setGroup("Venta MiniCuotas");
-				for (int j = 0; j< 3; j++){
-					group.childer.add("**********1280"+j);
-				}
-			break;
-			case 3:
-				group.setGroup("Venta Tasa Cero");
-				for (int j = 0; j< 3; j++){
-					group.childer.add("**********1280"+j);
-				}
-			break;
-			
-			}
-		}
+	public void setGroupParents() {
+		parentItems.add("Android");
+		parentItems.add("Core Java");
+		parentItems.add("Desktop Java");
+		parentItems.add("Enterprise Java");
 	}
-	
-	
-	
+
+	public void setChildData() {
+		
+		// Android
+		ArrayList<String> child = new ArrayList<String>();
+		child.add("Core");
+		child.add("Games");
+		childItems.add(child);
+		
+		
+		// Core Java
+		child = new ArrayList<String>();
+		child.add("Apache");
+		child.add("Applet");
+		child.add("AspectJ");
+		child.add("Beans");
+		child.add("Crypto");
+		childItems.add(child);
+		
+		// Desktop Java
+		child = new ArrayList<String>();
+		child.add("Accessibility");
+		child.add("AWT");
+		child.add("ImageIO");
+		child.add("Print");
+		childItems.add(child);
+		
+		
+		// Enterprise Java
+		child = new ArrayList<String>();
+		child.add("EJB3");
+		child.add("GWT");
+		child.add("Hibernate");
+		child.add("JSP");
+		childItems.add(child);
+	}
+
 }

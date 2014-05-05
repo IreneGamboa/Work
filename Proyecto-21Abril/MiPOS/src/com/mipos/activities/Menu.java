@@ -9,10 +9,10 @@ import com.mipos.venta.Venta;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.Fragment;
-
+import android.app.Activity;
+import android.content.Context;
 import android.content.res.Configuration;
 import android.os.Bundle;
-
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.widget.DrawerLayout;
 import android.view.View;
@@ -145,7 +145,7 @@ public class Menu extends SherlockFragmentActivity {
 			ft.replace(R.id.content_frame, venta);
 			break;
 		case 4:
-			ft.replace(R.id.content_frame, ajusteP);
+			ft.replace(R.id.content_frame,  ajusteP);
 			break;
 		}
 		
