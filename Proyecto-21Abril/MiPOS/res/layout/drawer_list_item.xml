@@ -21,8 +21,8 @@
             android:ellipsize="end"
             android:singleLine="true"
             android:textColor="#fff" />
-        
- 
+    
+
     </LinearLayout>
  
 

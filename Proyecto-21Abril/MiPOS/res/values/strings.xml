@@ -20,6 +20,7 @@
     <string name="password">Contraseña</string>
     <string name="user">Nombre de Usuario</string>
     <string name="login_button">Ingresar</string>
+    <string name="text_listView"/>
     
     
 

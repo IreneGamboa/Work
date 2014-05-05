@@ -1,34 +1,25 @@
 package com.mipos.ajustePropina;
 
+import com.androidbegin.menuviewpagertutorial.R;
+import com.mipos.utilies.Group;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.SparseArray;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ExpandableListView;
 
-import com.actionbarsherlock.app.SherlockFragment;
-import com.androidbegin.menuviewpagertutorial.R;
-import com.mipos.utilies.Group;
-
-public class AjustePropina extends SherlockFragment{
-	
+public class ListTrans extends Activity {
 	SparseArray<Group> groups = new SparseArray<Group>();
-	private Activity activity;
 	
 	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {
-		View rootView = inflater.inflate(R.layout.ajuste_propina, container, false);
-		/*createData();
-		ExpandableListView listView = (ExpandableListView) activity.findViewById(R.id.ListView_AP);
-		 MyExpandableListAdapter adapter = new MyExpandableListAdapter(this, groups);
-		listView.setAdapter(adapter);*/
-		return rootView;
+	protected void onCreate(Bundle savedInstanceState){
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.ajuste_propina);
+		createData();
+		ExpandableListView listView = (ExpandableListView) findViewById(R.id.ListView_AP);
+		MyExpandableListAdapter adapter = new MyExpandableListAdapter(this, groups);
+		listView.setAdapter(adapter);
 	}
-
 	private void createData() {
 		// TODO Auto-generated method stub
 		for (int i = 0; i<4; i++){
@@ -62,7 +53,5 @@ public class AjustePropina extends SherlockFragment{
 			}
 		}
 	}
-	
-	
-	
+
 }
