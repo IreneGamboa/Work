@@ -1,7 +1,7 @@
 package com.mipos.ajustePropina;
 
 
-import android.app.Activity;
+
 import android.os.Bundle;
 import android.util.SparseArray;
 import android.view.LayoutInflater;
@@ -11,21 +11,22 @@ import android.widget.ExpandableListView;
 
 import com.actionbarsherlock.app.SherlockFragment;
 import com.androidbegin.menuviewpagertutorial.R;
-import com.mipos.utilies.Group;
+import com.mipos.utilities.Group;
 
 public class AjustePropina extends SherlockFragment{
 	
 	SparseArray<Group> groups = new SparseArray<Group>();
-	private Activity activity;
+	//private Activity activity;
+	private View activity;
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		View rootView = inflater.inflate(R.layout.ajuste_propina, container, false);
-		/*createData();
+		createData();
 		ExpandableListView listView = (ExpandableListView) activity.findViewById(R.id.ListView_AP);
 		 MyExpandableListAdapter adapter = new MyExpandableListAdapter(this, groups);
-		listView.setAdapter(adapter);*/
+		listView.setAdapter(adapter);
 		return rootView;
 	}
 
