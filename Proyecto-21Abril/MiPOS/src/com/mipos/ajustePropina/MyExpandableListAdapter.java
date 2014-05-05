@@ -1,10 +1,10 @@
 package com.mipos.ajustePropina;
 
+
 import com.androidbegin.menuviewpagertutorial.R;
-import com.mipos.utilies.Group;
+import com.mipos.utilities.Group;
 
 import android.app.Activity;
-import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.util.SparseArray;
 import android.view.LayoutInflater;
@@ -16,37 +16,34 @@ import android.widget.CheckedTextView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
-
-public  class MyExpandableListAdapter extends BaseExpandableListAdapter{
+public class MyExpandableListAdapter extends BaseExpandableListAdapter {
 	
-	
-	private final SparseArray<Group> groups;
+	private SparseArray<Group> groups;
 	public LayoutInflater inflater;
 	public Activity activity;
 	
-	public MyExpandableListAdapter (Activity act, SparseArray<Group> groups){
-		activity = act;
-		this.groups = groups;
-		inflater = act.getLayoutInflater();
+	public MyExpandableListAdapter(Fragment act, SparseArray<Group> groups){
+		activity = (Activity) act.getActivity();
+	    this.groups = groups;
+	    inflater = act.getLayoutInflater(null);
 	}
 
 	@Override
 	public int getGroupCount() {
 		// TODO Auto-generated method stub
-		return 0;
+		return groups.size();
 	}
 
 	@Override
 	public int getChildrenCount(int groupPosition) {
 		// TODO Auto-generated method stub
-		return 0;
+		return groups.get(groupPosition).childer.size();
 	}
 
 	@Override
 	public Object getGroup(int groupPosition) {
 		// TODO Auto-generated method stub
-		return null;
+		return groups.get(groupPosition);
 	}
 
 	@Override
@@ -73,37 +70,40 @@ public  class MyExpandableListAdapter extends BaseExpandableListAdapter{
 		return false;
 	}
 
-	public View getGroupView(int groupPosition,final  int childPosition, 
-			boolean isExpanded,  View convertView, ViewGroup parent) {
-		final String children = (String) getChild(groupPosition, childPosition);
-		TextView text = null;
-		if(convertView == null){
-			convertView = inflater.inflate(R.layout.listrow_details,null);
-			
-		}
-		text = (TextView) convertView.findViewById(R.id.textView1);
-		text.setText(children);
-		convertView.setOnClickListener(new OnClickListener(){
-			@Override
-			public void onClick(View v){
-				Toast.makeText( activity, children, Toast.LENGTH_SHORT).show();
-			}
-		});
-		
+	@Override
+	public View getGroupView(int groupPosition, boolean isExpanded,
+			View convertView, ViewGroup parent) {
 		// TODO Auto-generated method stub
+		if (convertView == null) {
+		      convertView = inflater.inflate(R.layout.listrow_group_ap, null);
+		    }
+		Group group = (Group) getGroup(groupPosition);
+		((CheckedTextView) convertView).setText(group.string);
+		((CheckedTextView) convertView).setChecked(isExpanded);
 		return convertView;
 	}
 
 	@Override
-	public View getChildView(int groupPosition, int childPosition,
+	public View getChildView(int groupPosition, final int childPosition,
 			boolean isLastChild, View convertView, ViewGroup parent) {
 		// TODO Auto-generated method stub
+		final String children = (String) getChild(groupPosition, childPosition);
+		TextView text = null;
 		if (convertView == null){
-			convertView = inflater.inflate(R.layout.listrow_group_ap, null);
+			convertView = inflater.inflate(R.layout.listrow_details, null);
 		}
-		Group group = (Group) getGroup(groupPosition);
-		((CheckedTextView) convertView).setText(group.string);
-		((CheckedTextView) convertView).setChecked(isLastChild);
+		text = (TextView) convertView.findViewById(R.id.textView1);
+		text.setText(children);
+		convertView.setOnClickListener(new OnClickListener(){
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Toast.makeText(activity, children,
+						Toast.LENGTH_SHORT).show();
+			}
+			
+		});
 		return convertView;
 	}
 
@@ -112,12 +112,16 @@ public  class MyExpandableListAdapter extends BaseExpandableListAdapter{
 		// TODO Auto-generated method stub
 		return false;
 	}
+	
+	@Override
+	  public void onGroupCollapsed(int groupPosition) {
+	    super.onGroupCollapsed(groupPosition);
+	  }
+	
+	
 
 	@Override
-	public View getGroupView(int groupPosition, boolean isExpanded,
-			View convertView, ViewGroup parent) {
-		// TODO Auto-generated method stub
-		return null;
-	} 
-	
+	  public void onGroupExpanded(int groupPosition) {
+	    super.onGroupExpanded(groupPosition);
+	  }
 }
