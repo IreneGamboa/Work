@@ -2,22 +2,103 @@ package com.mipos.ajustePropina;
 
 
 
-import java.util.ArrayList;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.widget.ExpandableListView;
-import android.widget.ExpandableListView.OnChildClickListener;
+import android.view.View;
+import android.view.ViewGroup;
 
-import com.actionbarsherlock.app.SherlockExpandableListActivity;
+
+
+import android.widget.BaseExpandableListAdapter;
+import android.widget.ExpandableListView;
+import android.widget.TextView;
+
 import com.actionbarsherlock.app.SherlockFragment;
-import com.actionbarsherlock.app.SherlockFragmentActivity;
+import com.androidbegin.menuviewpagertutorial.R;
 
 
 public class AjustePropina extends SherlockFragment {
 	
-	private ArrayList<String> parentItems = new ArrayList<String>();
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+			Bundle savedInstanceState) {
+		View rootView = inflater.inflate(R.layout.ajuste_propina, container, false);
+		ExpandableListView elv = (ExpandableListView) rootView.findViewById(R.id.list);
+        elv.setAdapter(new SavedTabsListAdapter());
+		return rootView;
+		
+	}
+	
+	
+	 public class SavedTabsListAdapter extends BaseExpandableListAdapter {
+		 
+		 private String[] groups={"Venta Colones", "Venta Dolares", "Venta MiniCuotas"};
+			
+			private String[][] children = {
+					{"*****1280","*****1280","*****1280"},
+					{"*****1280","*****1280"},
+					{"*****1280"}
+			};
+			
+			@Override
+	        public int getGroupCount() {
+	            return groups.length;
+	        }
+	 
+	        @Override
+	        public int getChildrenCount(int i) {
+	            return children[i].length;
+	        }
+	 
+	        @Override
+	        public Object getGroup(int i) {
+	            return groups[i];
+	        }
+	 
+	        @Override
+	        public Object getChild(int i, int i1) {
+	            return children[i][i1];
+	        }
+	 
+	        @Override
+	        public long getGroupId(int i) {
+	            return i;
+	        }
+	 
+	        @Override
+	        public long getChildId(int i, int i1) {
+	            return i1;
+	        }
+	 
+	        @Override
+	        public boolean hasStableIds() {
+	            return true;
+	        }
+	 
+	        @Override
+	        public View getGroupView(int i, boolean b, View view, ViewGroup viewGroup) {
+	            TextView textView = new TextView(AjustePropina.this.getActivity());
+	            textView.setText(getGroup(i).toString());
+	            return textView;
+	        }
+	 
+	        @Override
+	        public View getChildView(int i, int i1, boolean b, View view, ViewGroup viewGroup) {
+	            TextView textView = new TextView(AjustePropina.this.getActivity());
+	            textView.setText(getChild(i, i1).toString());
+	            return textView;
+	        }
+	 
+	        @Override
+	        public boolean isChildSelectable(int i, int i1) {
+	            return true;
+	        }
+	 
+	    }
+		 
+	 }
+	/*private ArrayList<String> parentItems = new ArrayList<String>();
 	private ArrayList<Object> childItems = new ArrayList<Object>();
 	
 	private SherlockExpandableListActivity prueba;
@@ -88,6 +169,5 @@ public class AjustePropina extends SherlockFragment {
 		child.add("Hibernate");
 		child.add("JSP");
 		childItems.add(child);
-	}
+	}*/
 
-}
