@@ -829,11 +829,11 @@ containing a value of this type.
         public static final int continueV=0x7f040038;
         public static final int disableHome=0x7f040009;
         public static final int drawer_layout=0x7f040031;
-        public static final int header=0x7f04002f;
         public static final int homeAsUp=0x7f040006;
         public static final int linearLayout1=0x7f04002c;
         public static final int list=0x7f04002e;
         public static final int listMode=0x7f040002;
+        public static final int list_header_title=0x7f04002f;
         public static final int listview_drawer=0x7f040033;
         public static final int login=0x7f040036;
         public static final int monto=0x7f040037;
