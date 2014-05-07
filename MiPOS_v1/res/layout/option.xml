@@ -8,4 +8,5 @@
         android:paddingBottom="@dimen/menu_vertical_margin"
         android:paddingTop="@dimen/menu_vertical_margin"
         android:paddingLeft="@dimen/menu_option_horizontal_padding"
-        android:textColor="#000000"/>
+        android:textColor="#FFFFFF"
+        android:background="#1854DE"/>

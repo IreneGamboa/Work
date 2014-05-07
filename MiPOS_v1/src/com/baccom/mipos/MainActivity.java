@@ -16,6 +16,8 @@ import android.widget.ListView;
 
 
 
+
+import com.baccom.mipos.ajuste_propina.AjustePropina;
 import com.baccom.mipos.model.OptionsArrayAdapter;
 import com.baccom.mipos.venta.VentaFragment;
 import com.baccom.mipos.R;
@@ -31,7 +33,7 @@ public class MainActivity extends ActionBarActivity {
 
     private String[] mCategories = {"Autorizacion", "Administrativo", "Miscelaneo"};
     private String[] mOptionsAut = {"Venta Colones", "Venta Dolares", "Venta Tasa Cero", "Venta MiniCuotas"};
-    private String[] mOptionsAdmin = {"Ajuste de Porpina", "Anulacion","Devolucion","Cierre", "Reportes"};
+    private String[] mOptionsAdmin = {"Ajuste de Propina", "Anulacion","Devolucion","Cierre", "Reportes"};
     private String[] mOptionsMisc = {"Configuracion", "Cierre"};
    
 
@@ -70,6 +72,7 @@ public class MainActivity extends ActionBarActivity {
 
             public void onDrawerOpened(View drawerView){
                 getSupportActionBar().setTitle(mDrawerTitle);
+                super.onDrawerOpened(drawerView);
             }
         };
         mDrawer.setDrawerListener(mToggle);
@@ -100,10 +103,31 @@ public class MainActivity extends ActionBarActivity {
     private void selectItem(int position)
     {
         // update the main content by replacing fragments
-        Fragment fragment = new VentaFragment();
-
+        Fragment venta = new VentaFragment();
+        Fragment ajusteP = new AjustePropina();
         FragmentManager fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+        fragmentManager.beginTransaction().replace(R.id.content_frame, venta).commit();
+             
+        switch (position){
+        	case 1:
+        		fragmentManager.beginTransaction().replace(R.id.content_frame, venta).commit();
+        		break;
+        	case 2:
+        		fragmentManager.beginTransaction().replace(R.id.content_frame, venta).commit();
+        		break;
+        	case 3:
+        		fragmentManager.beginTransaction().replace(R.id.content_frame, venta).commit();
+        		break;
+        	case 4:
+        		fragmentManager.beginTransaction().replace(R.id.content_frame, venta).commit();
+        		break;
+        	case 6:
+        		fragmentManager.beginTransaction().replace(R.id.content_frame, ajusteP).commit();
+        		break;
+        	case 7:
+        		fragmentManager.beginTransaction().replace(R.id.content_frame, ajusteP).commit();
+        		break;
+        }
 
         // update selected item and title, then close the drawer
         mDrawerListView.setItemChecked(position, true);

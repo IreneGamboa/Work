@@ -3,11 +3,11 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="menu_vertical_margin">4dp</dimen>
-    <dimen name="text_size_normal">20sp</dimen>
-    <dimen name="text_size_big">25sp</dimen>
-    <dimen name="text_size_small">20sp</dimen>
-    <dimen name="text_size_smaller">25sp</dimen>
-    <dimen name="text_spacing">15sp</dimen>
+    <dimen name="text_size_normal">25sp</dimen>
+    <dimen name="text_size_big">30sp</dimen>
+    <dimen name="text_size_small">15sp</dimen>
+    <dimen name="text_size_smaller">10sp</dimen>
+    <dimen name="text_spacing">25sp</dimen>
     <dimen name="menu_horizontal_padding">15dp</dimen>
-    <dimen name="menu_option_horizontal_padding">15dp</dimen>
+    <dimen name="menu_option_horizontal_padding">35dp</dimen>
 </resources>

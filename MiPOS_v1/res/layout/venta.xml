@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp" >
+
+    <EditText
+        android:id="@+id/monto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ventaC"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/exampleV"
+        android:inputType="numberDecimal" 
+        android:gravity="center"
+        android:background="@drawable/rect_edit_text"
+        android:textColor="#121563"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dp">
+
+        <requestFocus />
+    </EditText>
+    
+    <Button 
+        android:id="@+id/continueV"
+        style="@style/btnGray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/monto"
+        android:layout_margin="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/continueV"
+        />
+
+    <TextView
+        android:id="@+id/ventaC"
+        style="@style/TitleView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="22dp"
+        android:text="@string/venta" />
+
+</RelativeLayout>
