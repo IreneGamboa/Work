@@ -4,6 +4,7 @@ package com.baccom.mipos.venta;
 
 import com.baccom.mipos.R;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -17,4 +18,9 @@ public class VentaFragment extends Fragment {
 		View rootView = inflater.inflate(R.layout.venta, container, false);
 		return rootView;
 		}
+	
+	public void continueSale(View view){
+		Intent deviceC = new Intent(getActivity(), DeviceConnect.class);
+    	startActivity(deviceC);
+	}
 }

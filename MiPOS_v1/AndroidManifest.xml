@@ -26,6 +26,14 @@
             android:name="com.baccom.mipos.MainActivity"
             android:label="@string/app_name" >
         </activity>
+        <activity
+            android:name="com.baccom.mipos.venta.DeviceConnect"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.baccom.mipos.venta.SlideCard"
+            android:label="@string/app_name" >
+        </activity>
     </application>
 
 </manifest>

@@ -1,5 +1,6 @@
 package com.baccom.mipos;
 
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
@@ -18,8 +19,10 @@ import android.widget.ListView;
 
 
 
+
 import com.baccom.mipos.ajuste_propina.AjustePropina;
 import com.baccom.mipos.model.OptionsArrayAdapter;
+import com.baccom.mipos.venta.DeviceConnect;
 import com.baccom.mipos.venta.VentaFragment;
 import com.baccom.mipos.R;
 
@@ -161,5 +164,10 @@ public class MainActivity extends ActionBarActivity {
         // Pass any configuration change to the drawer toggles
         mToggle.onConfigurationChanged(newConfig);
     }
+    
+    public void continueSale(View view){
+		Intent deviceC = new Intent(this, DeviceConnect.class);
+    	startActivity(deviceC);
+	}
 
 }

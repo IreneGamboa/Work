@@ -26,6 +26,7 @@
         android:hint="@string/user"
         android:textColor="#121563" 
         android:layout_gravity="center">
+        <requestFocus />
     </EditText>
     
     <EditText

@@ -7,7 +7,7 @@
     <string name="drawer_close">Drawer Close</string>
     <string name="text_holder">Text Holder</string>
     <string name="continueV">Continuar</string>
-    <string name="exampleV">0.00</string>
+    <string name="email">Correo Electrónico</string>
     <string name="venta">Venta Colones</string>
     <string name="ajusteP">Ajuste de Propina</string>
     <string name="terminal_activate">Activar Terminal</string>
@@ -21,5 +21,8 @@
     <string name="login">Ingresar</string>
     <string name="remember_password">¿Olvidó su Contraseña?</string>
     <string name="label_password">Ingrese su correo electrónico y le enviaremos las indicacions para reestablecer su contraseña.</string>
+    <string name="send">Enviar</string>
+    <string name="exampleV">0.00</string>
+    <string name="device">Conecte el Dispositivo</string>
 
 </resources>
