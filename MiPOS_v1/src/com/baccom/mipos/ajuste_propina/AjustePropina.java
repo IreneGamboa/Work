@@ -78,7 +78,7 @@ public class AjustePropina extends Fragment {
 	            textView.setText(getGroup(i).toString());
 	            textView.setTextSize(25);
 	            textView.setTextColor(Color.parseColor("#ffffff"));
-	            textView.setBackgroundColor(Color.parseColor("#1854DE"));
+	            textView.setBackgroundColor(R.drawable.table_view_header_background);
 	            return textView;
 	        }
 	 
@@ -88,7 +88,7 @@ public class AjustePropina extends Fragment {
 	            textView.setText(getChild(i, i1).toString());
 	            textView.setTextSize(20);
 	            textView.setTextColor(Color.parseColor("#000000"));
-	            textView.setBackgroundColor(Color.parseColor("#E3E4E6"));
+	            textView.setBackgroundColor(Color.parseColor("#FFFFFF"));
 	            return textView;
 	        }
 	 

@@ -10,10 +10,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-        android:background="#060957" >
+        android:background="@drawable/title_bar_background" >
 
         <TextView
-            android:id="@+id/ventaC"
+            android:id="@+id/ajustePropina"
             style="@style/Title"
             android:text="@string/ajusteP" 
             android:gravity="center"/>

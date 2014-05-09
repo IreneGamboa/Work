@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/gray_background">
+    
+    <ImageView
+        android:id="@+id/imageTerminalAc"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/credomatic_logo_login"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp">
+        
+    </ImageView>
+    
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/rect_edit_text"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/user"
+        android:textColor="#121563" 
+        android:layout_gravity="center">
+    </EditText>
+    
+    <EditText
+        android:id="@+id/passwor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/rect_edit_text"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/password"
+        android:textColor="#121563" 
+        android:layout_gravity="center">
+    </EditText>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4" >
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:layout_gravity="left|top"
+            android:layout_row="0" >
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/blue_arrow_login" />
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/mySwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/remember_user" 
+            android:layout_marginLeft="10dp"
+            />
+    </GridLayout>
+    
+    <Button 
+        android:id="@+id/continueV"
+        android:background="@drawable/gray_button_background"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="@string/login"
+        android:layout_gravity="center"
+        />
+    
+    <TextView
+        android:id="@+id/terminalAC2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/remember_password"
+        android:textSize="@dimen/text_size_small" 
+        android:textColor="#030A6E"
+        android:textStyle="bold"/>
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gray_bar_login"
+        android:layout_gravity="center"
+        android:layout_marginTop="0.5dp">
+        
+    </ImageView>
+
+</LinearLayout>

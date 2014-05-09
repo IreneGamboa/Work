@@ -17,6 +17,7 @@ import android.widget.ListView;
 
 
 
+
 import com.baccom.mipos.ajuste_propina.AjustePropina;
 import com.baccom.mipos.model.OptionsArrayAdapter;
 import com.baccom.mipos.venta.VentaFragment;
@@ -41,6 +42,8 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
+        
 
         mTitle = mDrawerTitle = getTitle();
 
@@ -82,6 +85,7 @@ public class MainActivity extends ActionBarActivity {
             selectItem(0);
         }
 
+        
     }
 
     @Override

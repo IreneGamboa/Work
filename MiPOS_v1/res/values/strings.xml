@@ -10,5 +10,16 @@
     <string name="exampleV">0.00</string>
     <string name="venta">Venta Colones</string>
     <string name="ajusteP">Ajuste de Propina</string>
+    <string name="terminal_activate">Activar Terminal</string>
+    <string name="label_ta">Active su nuevo terminal de pagos</string>
+    <string name="code_terminal">Codigo de Terminal</string>
+    <string name="code_activation">Codigo de Activacion</string>
+    <string name="activate">Activar Terminal</string>
+    <string name="user">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="remember_user">Recordar Usuario</string>
+    <string name="login">Ingresar</string>
+    <string name="remember_password">¿Olvidó su Contraseña?</string>
+    <string name="label_password">Ingrese su correo electrónico y le enviaremos las indicacions para reestablecer su contraseña.</string>
 
 </resources>
