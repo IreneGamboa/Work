@@ -16,7 +16,8 @@
             android:id="@+id/ajustePropina"
             style="@style/Title"
             android:text="@string/ajusteP" 
-            android:gravity="center"/>
+            android:gravity="center"
+            android:textSize="@dimen/text_size_big"/>
      
      </LinearLayout>
      <ExpandableListView

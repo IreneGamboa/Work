@@ -81,6 +81,8 @@ public class MainActivity extends ActionBarActivity {
                 super.onDrawerOpened(drawerView);
             }
         };
+        
+        
         mDrawer.setDrawerListener(mToggle);
 
         if (savedInstanceState == null)

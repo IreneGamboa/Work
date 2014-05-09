@@ -19,8 +19,9 @@ public class VentaFragment extends Fragment {
 		return rootView;
 		}
 	
-	public void continueSale(View view){
+	/*public void continueSale(View view){
 		Intent deviceC = new Intent(getActivity(), DeviceConnect.class);
     	startActivity(deviceC);
-	}
+	}*/
+	
 }
