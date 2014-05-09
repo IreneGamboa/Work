@@ -33,6 +33,7 @@
         <item name="android:textSize">30sp</item>
         <item name ="android:fontFamily">sans-serif-condensed</item>
         <item name ="android:textStyle">bold|italic</item>
+        <item name = "android:text">"Credomatic"</item>
         <!-- The textColor property is backward compatible with the Support Library -->
     </style>
 
