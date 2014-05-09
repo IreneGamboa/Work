@@ -25,5 +25,5 @@
         android:choiceMode="singleChoice"
         android:divider="#8E8E8E"
         android:dividerHeight="0.5dp"
-        android:background="#FFFFFF"/>
+        android:background="@drawable/options_menu_background"/>
 </android.support.v4.widget.DrawerLayout>

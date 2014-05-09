@@ -21,7 +21,7 @@ public class OptionsArrayAdapter extends BaseAdapter {
         public final static int TYPE_SECTION_HEADER = 0;
 
         public OptionsArrayAdapter(Context context) {
-            headers = new ArrayAdapter<String>(context, R.layout.header);
+            headers = new ArrayAdapter<String>(context, R.layout.list_header);
         }
 
         public void addSection(String section, Adapter adapter) {

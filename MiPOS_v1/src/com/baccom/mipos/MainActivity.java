@@ -51,9 +51,9 @@ public class MainActivity extends ActionBarActivity {
 
         OptionsArrayAdapter arrayAdapter = new OptionsArrayAdapter(this.getApplicationContext());
 
-        arrayAdapter.addSection(mCategories[0], new ArrayAdapter<String>(this.getApplicationContext(), R.layout.option, mOptionsAut));
-        arrayAdapter.addSection(mCategories[1], new ArrayAdapter<String>(this.getApplicationContext(), R.layout.option, mOptionsAdmin));
-        arrayAdapter.addSection(mCategories[2], new ArrayAdapter<String>(this.getApplicationContext(), R.layout.option, mOptionsMisc));
+        arrayAdapter.addSection(mCategories[0], new ArrayAdapter<String>(this.getApplicationContext(), R.layout.list_option, mOptionsAut));
+        arrayAdapter.addSection(mCategories[1], new ArrayAdapter<String>(this.getApplicationContext(), R.layout.list_option, mOptionsAdmin));
+        arrayAdapter.addSection(mCategories[2], new ArrayAdapter<String>(this.getApplicationContext(), R.layout.list_option, mOptionsMisc));
 
         
         mDrawerListView.setAdapter(arrayAdapter);

@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="10dp" >
+    android:layout_marginTop="10dp" 
+    android:background="@drawable/gray_background">
 
     <EditText
         android:id="@+id/monto"
@@ -24,8 +25,10 @@
     
     <Button 
         android:id="@+id/continueV"
-        style="@style/btnGray"
-        android:layout_width="wrap_content"
+        android:background="@drawable/gray_button_background"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/monto"
         android:layout_margin="30dp"
