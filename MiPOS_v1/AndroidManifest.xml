@@ -36,11 +36,19 @@
         </activity>
         <activity
             android:name="com.baccom.mipos.Login"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
         </activity>
         <activity
             android:name="com.baccom.mipos.TerminalActivate"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.baccom.mipos.RememberPassword"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.baccom.mipos.venta.ConfirmSale"
+            android:label="@string/app_name">
         </activity>
     </application>
 

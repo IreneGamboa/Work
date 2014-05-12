@@ -23,7 +23,9 @@ import android.widget.ListView;
 
 
 
+
 import com.baccom.mipos.ajuste_propina.AjustePropina;
+import com.baccom.mipos.anulacion.Anulacion;
 import com.baccom.mipos.model.OptionsArrayAdapter;
 import com.baccom.mipos.venta.DeviceConnect;
 import com.baccom.mipos.venta.VentaFragment;
@@ -41,7 +43,7 @@ public class MainActivity extends ActionBarActivity {
     private String[] mCategories = {"Autorizacion", "Administrativo", "Miscelaneo"};
     private String[] mOptionsAut = {"Venta Colones", "Venta Dolares", "Venta Tasa Cero", "Venta MiniCuotas"};
     private String[] mOptionsAdmin = {"Ajuste de Propina", "Anulacion","Devolucion","Cierre", "Reportes"};
-    private String[] mOptionsMisc = {"Configuracion", "Cierre"};
+    private String[] mOptionsMisc = {"Configuracion", "Salir"};
    
 
     @Override
@@ -49,11 +51,9 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
-        getSupportActionBar().setHomeButtonEnabled(false);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(false);
-        getSupportActionBar().setIcon(android.R.color.transparent);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
+
+		getSupportActionBar().setIcon(android.R.color.transparent);
+		getSupportActionBar().setDisplayShowTitleEnabled(false);
         
 
         mTitle = mDrawerTitle = getTitle();
@@ -122,6 +122,7 @@ public class MainActivity extends ActionBarActivity {
     private void selectItem(String optionName, int position){
     	 Fragment venta = new VentaFragment();
          Fragment ajusteP = new AjustePropina();
+         Fragment anulacion = new Anulacion();
          FragmentManager fragmentManager = getSupportFragmentManager();
          fragmentManager.beginTransaction().replace(R.id.content_frame, venta).commit();
          
@@ -129,8 +130,12 @@ public class MainActivity extends ActionBarActivity {
     		fragmentManager.beginTransaction().replace(R.id.content_frame, venta).commit();
     		Log.i(optionName, optionName);
     	} else if(optionName.equals(mOptionsAdmin[0])){
-    		fragmentManager.beginTransaction().replace(R.id.content_frame, ajusteP).commit();	
-   	}
+    		fragmentManager.beginTransaction().replace(R.id.content_frame, ajusteP).commit();
+    		Log.i(optionName, optionName);
+    	}else if(optionName.equals(mOptionsAdmin[1])){
+    		fragmentManager.beginTransaction().replace(R.id.content_frame, anulacion).commit();
+    		Log.i(optionName, optionName);
+    		}
     	 mDrawerListView.setItemChecked(position, true);
          mDrawer.closeDrawer(mDrawerListView);
 }

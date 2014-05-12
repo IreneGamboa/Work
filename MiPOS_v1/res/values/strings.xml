@@ -24,5 +24,22 @@
     <string name="send">Enviar</string>
     <string name="exampleV">0.00</string>
     <string name="device">Conecte el Dispositivo</string>
+    <string name="slide_card">Deslice la Tarjeta</string>
+    <string name="label_slide">Deslice la tarjeta de izquierda a drecha por el dispositivo, siempre con la banda magnética hacia abajo tal y como se muestra en la siguiente imagen:</string>
+    <string name="anulacion">Anulacion</string>
+    <string name="confirmar_compra">Confirmar Compra</string>
+    <string name="tarjeta">Tarjeta:</string>
+    <string name="name">Nombre</string>
+    <string name="sub_total">SubTotal</string>
+    <string name="taxation">Impuestos</string>
+    <string name="tip">Propina</string>
+    <string name="total">Monto Total</string>
+    <string name="simbolo_colones">₡</string>
+    <string name="example_tip">0</string>
+    <string name="vacio"/>
+    <string name="tip1">6%</string>
+    <string name="tip2">11%</string>
+    <string name="tip3">20%</string>
+    <string name="make_sale">Realizar Venta</string>
 
 </resources>

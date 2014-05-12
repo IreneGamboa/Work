@@ -12,11 +12,8 @@ public class TerminalActivate extends Activity {
 	    super.onCreate(savedInstanceState);
 	    setContentView(R.layout.terminal_activate);
 	    
-	    getActionBar().setHomeButtonEnabled(false);
-        getActionBar().setDisplayHomeAsUpEnabled(true);
-        getActionBar().setDisplayShowHomeEnabled(false);
-        getActionBar().setIcon(android.R.color.transparent);
-        getActionBar().setDisplayShowTitleEnabled(false);
+	    getActionBar().hide();
+        
 	}
 	
 	public void activate(View view){

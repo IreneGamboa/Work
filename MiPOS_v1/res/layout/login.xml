@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" 
-    android:background="@drawable/gray_background">
+    android:background="@drawable/gray_background"
+    style="@style/Theme.FullScreen">
     
     <ImageView
         android:id="@+id/imageTerminalAc"
@@ -45,7 +46,8 @@
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:columnCount="4" >
+        android:columnCount="4" 
+        android:layout_gravity="center">
 
         <LinearLayout
             android:layout_height="match_parent"
@@ -85,7 +87,7 @@
         android:onClick="login"
         />
     
-    <TextView
+    <Button
         android:id="@+id/terminalAC2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -95,7 +97,9 @@
         android:text="@string/remember_password"
         android:textSize="@dimen/text_size_small" 
         android:textColor="#030A6E"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:onClick="rememberPass"
+        android:background="@android:color/transparent"/>
     <ImageView
         android:id="@+id/image3"
         android:layout_width="200dp"

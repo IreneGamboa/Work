@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gray_background" >
+    
+    <TextView
+        android:id="@+id/confirmar_compra"
+        style="@style/TitleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="22dp"
+        android:text="@string/confirmar_compra"
+        android:textSize="@dimen/text_size_big" />
+    
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="4dip"
+        android:background="@drawable/full_width_gray_frame" />
+ 
+    <!-- 2 columns -->
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+ 
+        <TextView
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tarjeta"
+            android:text="@string/tarjeta"
+            android:textColor="#030A6E"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold" />
+ 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dataTarjeta"
+            android:textColor="#989898"
+            android:text="bbb"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold" />
+    </TableRow>
+ 
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+ 
+        <TextView
+           	android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:text="@string/name"
+            android:textColor="#030A6E"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold" />
+ 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dataName"
+            android:textColor="#989898"
+            android:text="bbb"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold" />
+    </TableRow>
+    
+ 
+    <!-- just draw a red line -->
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="4dip"
+        android:background="@drawable/full_width_gray_frame" />
+ 
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+ 
+        <TextView
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/subTotal"
+            android:text="@string/sub_total"
+            android:textColor="#030A6E"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold" />
+ 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/datasubT"
+            android:textColor="#989898"
+            android:text="bbb"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold" />
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+ 
+        <TextView
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/taxation"
+            android:text="@string/taxation"
+            android:textColor="#030A6E"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold" />
+ 
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dataTaxation"
+            android:textColor="#989898"
+            android:text="@string/taxation"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold"
+            android:background="@drawable/rect_edit_text"
+            android:gravity="center"
+            android:inputType="numberDecimal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/simboloC"
+            android:text="@string/simbolo_colones"
+            android:textColor="#030A6E"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold" />
+        
+    </TableRow>
+   
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dip"
+        android:background="@android:color/black" />
+    
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+ 
+        <TextView
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tip"
+            android:text="@string/tip"
+            android:textColor="#030A6E"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold" />
+ 
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dataTip"
+            android:textColor="#989898"
+            android:text="@string/example_tip"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold"
+            android:background="@drawable/rect_edit_text"
+            android:gravity="center"
+            android:inputType="numberDecimal" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/simboloC"
+            android:text="@string/simbolo_colones"
+            android:textColor="#030A6E"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold" />
+        
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vacio"
+            android:textColor="#030A6E"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold" />
+ 
+        <Button
+            android:id="@+id/tip1"
+            style="@style/buttonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:onClick="sendT1"
+            android:text="@string/tip1"
+            android:textColor="#030A6E" />
+        
+        <Button
+            android:id="@+id/tip2"
+            style="@style/buttonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:onClick="sendT2"
+            android:text="@string/tip2"
+            android:textColor="#030A6E" />
+        
+        <Button
+            android:id="@+id/tip3"
+            style="@style/buttonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:onClick="sendT3"
+            android:text="@string/tip3"
+            android:textColor="#030A6E" />
+        
+    </TableRow>
+    
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="4dip"
+        android:background="@drawable/full_width_gray_frame" />
+    
+    <TableRow
+        android:id="@+id/tableRow7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+        
+        <TextView
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="@string/total"
+            android:textColor="#030A6E"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vacio"
+            android:textColor="#989898"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold" />
+
+    </TableRow>
+  
+   
+       
+     
+        
+ <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4" 
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:layout_gravity="left|top"
+            android:layout_row="0" >
+
+             <Button
+                 android:id="@+id/makeSale1"
+                 style="@style/buttonStyle"
+                 android:layout_width="255dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="90dp"
+                 android:background="@drawable/tiled_button_blue_background"
+                 android:onClick="makeSale"
+                 android:text="@string/make_sale"
+                 android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <Button
+            
+            android:id="@+id/makeSale2"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/tiled_button_arrow_background"
+            android:onClick="makeSale"
+            android:textColor="#030A6E"
+            style="@style/buttonStyle" />
+    </GridLayout>
+       
+        
+        
+        
+        
+    
+    
+    
+</TableLayout>

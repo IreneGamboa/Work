@@ -1121,24 +1121,30 @@ containing a value of this type.
         public static final int activate_terminal_header=0x7f020057;
         public static final int activity_splash_screen=0x7f020058;
         public static final int blue_arrow_login=0x7f020059;
-        public static final int blue_navbar=0x7f02005a;
-        public static final int btn_gray=0x7f02005b;
-        public static final int connect_device=0x7f02005c;
-        public static final int credomatic_logo_login=0x7f02005d;
-        public static final int drawer_shadow=0x7f02005e;
-        public static final int gray_background=0x7f02005f;
-        public static final int gray_bar_login=0x7f020060;
-        public static final int gray_button_background=0x7f020061;
-        public static final int ic_drawer=0x7f020062;
-        public static final int ic_icon=0x7f020063;
-        public static final int ic_launcher=0x7f020064;
-        public static final int options_menu_background=0x7f020065;
-        public static final int options_menu_tableview_header_background=0x7f020066;
-        public static final int rect_edit_text=0x7f020067;
-        public static final int table_view_cell_light_blue_background=0x7f020068;
-        public static final int table_view_header_background=0x7f020069;
-        public static final int tiled_button_pressed_overlay=0x7f02006a;
-        public static final int title_bar_background=0x7f02006b;
+        public static final int blue_button_background=0x7f02005a;
+        public static final int blue_navbar=0x7f02005b;
+        public static final int btn_gray=0x7f02005c;
+        public static final int connect_device=0x7f02005d;
+        public static final int credomatic_logo_login=0x7f02005e;
+        public static final int drawer_shadow=0x7f02005f;
+        public static final int full_width_gray_frame=0x7f020060;
+        public static final int gray_background=0x7f020061;
+        public static final int gray_bar_login=0x7f020062;
+        public static final int gray_button_background=0x7f020063;
+        public static final int ic_drawer=0x7f020064;
+        public static final int ic_icon=0x7f020065;
+        public static final int ic_launcher=0x7f020066;
+        public static final int options_menu_background=0x7f020067;
+        public static final int options_menu_tableview_header_background=0x7f020068;
+        public static final int rect_edit_text=0x7f020069;
+        public static final int slide_card=0x7f02006a;
+        public static final int starting_sevice_gif=0x7f02006b;
+        public static final int table_view_cell_light_blue_background=0x7f02006c;
+        public static final int table_view_header_background=0x7f02006d;
+        public static final int tiled_button_arrow_background=0x7f02006e;
+        public static final int tiled_button_blue_background=0x7f02006f;
+        public static final int tiled_button_pressed_overlay=0x7f020070;
+        public static final int title_bar_background=0x7f020071;
     }
     public static final class id {
         public static final int action_bar=0x7f05001c;
@@ -1152,18 +1158,24 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050024;
-        public static final int action_settings=0x7f050057;
-        public static final int activateTerminal=0x7f050053;
+        public static final int action_settings=0x7f050072;
+        public static final int activateTerminal=0x7f05006e;
         public static final int activity_chooser_view_content=0x7f050025;
         public static final int ajustePropina=0x7f050041;
         public static final int always=0x7f05000b;
         public static final int beginning=0x7f050011;
         public static final int checkbox=0x7f05002d;
         public static final int collapseActionView=0x7f05000d;
+        public static final int confirmar_compra=0x7f050044;
         public static final int content_frame=0x7f05003d;
-        public static final int continueV=0x7f050056;
+        public static final int continueV=0x7f050071;
+        public static final int dataName=0x7f05004a;
+        public static final int dataTarjeta=0x7f050047;
+        public static final int dataTaxation=0x7f050050;
+        public static final int dataTip=0x7f050054;
+        public static final int datasubT=0x7f05004d;
         public static final int default_activity_button=0x7f050028;
-        public static final int devicde=0x7f050043;
+        public static final int devicde=0x7f05005d;
         public static final int dialog=0x7f05000e;
         public static final int disableHome=0x7f050008;
         public static final int drawer_layout=0x7f05003c;
@@ -1175,30 +1187,33 @@ containing a value of this type.
         public static final int home=0x7f050014;
         public static final int homeAsUp=0x7f050005;
         public static final int icon=0x7f05002a;
-        public static final int idActivation=0x7f050052;
-        public static final int idTerminal=0x7f05004f;
+        public static final int idActivation=0x7f05006d;
+        public static final int idTerminal=0x7f050069;
         public static final int ifRoom=0x7f05000a;
         public static final int image=0x7f050027;
-        public static final int image2=0x7f050049;
-        public static final int image3=0x7f05004d;
-        public static final int imageDevice=0x7f050044;
-        public static final int imageTerminalAc=0x7f050046;
+        public static final int image2=0x7f050063;
+        public static final int image3=0x7f050067;
+        public static final int imageDevice=0x7f05005e;
+        public static final int imageTerminalAc=0x7f050060;
         public static final int imageView1=0x7f05003f;
-        public static final int label1=0x7f05004e;
+        public static final int label1=0x7f050068;
         public static final int left_drawer=0x7f05003e;
         public static final int linearLayout1=0x7f050040;
         public static final int list=0x7f050042;
         public static final int listMode=0x7f050001;
         public static final int list_item=0x7f050029;
-        public static final int login=0x7f05004b;
+        public static final int login=0x7f050065;
+        public static final int makeSale1=0x7f05005b;
+        public static final int makeSale2=0x7f05005c;
         public static final int middle=0x7f050012;
-        public static final int monto=0x7f050054;
-        public static final int mySwitch=0x7f05004a;
+        public static final int monto=0x7f05006f;
+        public static final int mySwitch=0x7f050064;
+        public static final int name=0x7f050049;
         public static final int never=0x7f050009;
         public static final int none=0x7f050010;
         public static final int normal=0x7f050000;
-        public static final int option_label=0x7f050045;
-        public static final int passwor=0x7f050048;
+        public static final int option_label=0x7f05005f;
+        public static final int passwor=0x7f050062;
         public static final int progress_circular=0x7f050018;
         public static final int progress_horizontal=0x7f050019;
         public static final int radio=0x7f05002f;
@@ -1212,22 +1227,40 @@ containing a value of this type.
         public static final int search_plate=0x7f050036;
         public static final int search_src_text=0x7f050037;
         public static final int search_voice_btn=0x7f05003b;
-        public static final int sendPass=0x7f050050;
+        public static final int sendPass=0x7f05006a;
         public static final int shortcut=0x7f05002e;
         public static final int showCustom=0x7f050007;
         public static final int showHome=0x7f050004;
         public static final int showTitle=0x7f050006;
+        public static final int simboloC=0x7f050051;
         public static final int split_action_bar=0x7f05001e;
+        public static final int subTotal=0x7f05004c;
         public static final int submit_area=0x7f050039;
         public static final int tabMode=0x7f050002;
-        public static final int terminalAC=0x7f050051;
-        public static final int terminalAC2=0x7f05004c;
+        public static final int tableLayout1=0x7f050043;
+        public static final int tableRow1=0x7f050045;
+        public static final int tableRow2=0x7f050048;
+        public static final int tableRow3=0x7f05004b;
+        public static final int tableRow4=0x7f05004e;
+        public static final int tableRow5=0x7f050052;
+        public static final int tableRow6=0x7f050055;
+        public static final int tableRow7=0x7f050059;
+        public static final int tarjeta=0x7f050046;
+        public static final int taxation=0x7f05004f;
+        public static final int terminalAC=0x7f05006c;
+        public static final int terminalAC2=0x7f050066;
+        public static final int text1=0x7f05006b;
+        public static final int tip=0x7f050053;
+        public static final int tip1=0x7f050056;
+        public static final int tip2=0x7f050057;
+        public static final int tip3=0x7f050058;
         public static final int title=0x7f05002b;
         public static final int top_action_bar=0x7f050020;
+        public static final int total=0x7f05005a;
         public static final int up=0x7f050021;
         public static final int useLogo=0x7f050003;
-        public static final int user=0x7f050047;
-        public static final int ventaC=0x7f050055;
+        public static final int user=0x7f050061;
+        public static final int ventaC=0x7f050070;
         public static final int withText=0x7f05000c;
     }
     public static final class integer {
@@ -1283,15 +1316,17 @@ containing a value of this type.
         public static final int activity_main=0x7f030018;
         public static final int activity_splash_screen=0x7f030019;
         public static final int ajuste_propina=0x7f03001a;
-        public static final int connnect_device=0x7f03001b;
-        public static final int list_header=0x7f03001c;
-        public static final int list_option=0x7f03001d;
-        public static final int login=0x7f03001e;
-        public static final int remember_password=0x7f03001f;
-        public static final int slide_card=0x7f030020;
-        public static final int support_simple_spinner_dropdown_item=0x7f030021;
-        public static final int terminal_activate=0x7f030022;
-        public static final int venta=0x7f030023;
+        public static final int anulacion=0x7f03001b;
+        public static final int confirmar_compra=0x7f03001c;
+        public static final int connnect_device=0x7f03001d;
+        public static final int list_header=0x7f03001e;
+        public static final int list_option=0x7f03001f;
+        public static final int login=0x7f030020;
+        public static final int remember_password=0x7f030021;
+        public static final int slide_card=0x7f030022;
+        public static final int support_simple_spinner_dropdown_item=0x7f030023;
+        public static final int terminal_activate=0x7f030024;
+        public static final int venta=0x7f030025;
     }
     public static final class menu {
         public static final int home=0x7f0c0000;
@@ -1340,25 +1375,42 @@ containing a value of this type.
         public static final int action_settings=0x7f0a000e;
         public static final int activate=0x7f0a001a;
         public static final int ajusteP=0x7f0a0015;
+        public static final int anulacion=0x7f0a0026;
         public static final int app_name=0x7f0a000d;
         public static final int code_activation=0x7f0a0019;
         public static final int code_terminal=0x7f0a0018;
+        public static final int confirmar_compra=0x7f0a0027;
         public static final int continueV=0x7f0a0012;
         public static final int device=0x7f0a0023;
         public static final int drawer_close=0x7f0a0010;
         public static final int drawer_open=0x7f0a000f;
         public static final int email=0x7f0a0013;
         public static final int exampleV=0x7f0a0022;
+        public static final int example_tip=0x7f0a002f;
         public static final int label_password=0x7f0a0020;
+        public static final int label_slide=0x7f0a0025;
         public static final int label_ta=0x7f0a0017;
         public static final int login=0x7f0a001e;
+        public static final int make_sale=0x7f0a0034;
+        public static final int name=0x7f0a0029;
         public static final int password=0x7f0a001c;
         public static final int remember_password=0x7f0a001f;
         public static final int remember_user=0x7f0a001d;
         public static final int send=0x7f0a0021;
+        public static final int simbolo_colones=0x7f0a002e;
+        public static final int slide_card=0x7f0a0024;
+        public static final int sub_total=0x7f0a002a;
+        public static final int tarjeta=0x7f0a0028;
+        public static final int taxation=0x7f0a002b;
         public static final int terminal_activate=0x7f0a0016;
         public static final int text_holder=0x7f0a0011;
+        public static final int tip=0x7f0a002c;
+        public static final int tip1=0x7f0a0031;
+        public static final int tip2=0x7f0a0032;
+        public static final int tip3=0x7f0a0033;
+        public static final int total=0x7f0a002d;
         public static final int user=0x7f0a001b;
+        public static final int vacio=0x7f0a0030;
         public static final int venta=0x7f0a0014;
     }
     public static final class style {
@@ -1374,21 +1426,23 @@ containing a value of this type.
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f0b008f;
+        public static final int AppBaseTheme=0x7f0b0093;
         /**  Base application theme. 
  Customize your theme here. 
          */
         public static final int AppTheme=0x7f0b008b;
         /**  the theme applied to the application or activity 
          */
-        public static final int CustomActionBarTheme=0x7f0b0090;
+        public static final int CustomActionBarTheme=0x7f0b0094;
+        public static final int CustomAlertDialogStyle=0x7f0b008d;
         /**  ActionBar styles 
          */
-        public static final int MyActionBar=0x7f0b0091;
+        public static final int MyActionBar=0x7f0b0095;
         /**  ActionBar title text 
  The textColor property is backward compatible with the Support Library 
          */
-        public static final int MyActionBarTitleText=0x7f0b0092;
+        public static final int MyActionBarTitleText=0x7f0b0096;
+        public static final int MyTheme=0x7f0b008c;
         /**  Mimic text appearance in select_dialog_item.xml 
          */
         public static final int TextAppearance_AppCompat_Base_CompactMenu_Dialog=0x7f0b0063;
@@ -1497,8 +1551,9 @@ containing a value of this type.
         /**  Base platform-dependent theme providing a light-themed activity. 
          */
         public static final int Theme_Base_Light=0x7f0b007f;
-        public static final int Title=0x7f0b008d;
-        public static final int TitleView=0x7f0b008c;
+        public static final int Theme_FullScreen=0x7f0b008e;
+        public static final int Title=0x7f0b0090;
+        public static final int TitleView=0x7f0b008f;
         /**  Styles in here can be extended for customisation in your application. Each utilises
          one of the Base styles. If Holo themes are available on the current platform version
          they will be used instead of the compat styles. 
@@ -1593,7 +1648,10 @@ containing a value of this type.
         public static final int Widget_AppCompat_ProgressBar=0x7f0b000a;
         public static final int Widget_AppCompat_ProgressBar_Horizontal=0x7f0b0009;
         public static final int Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f0b0022;
-        public static final int generalnotitle=0x7f0b008e;
+        /**  The button styles 
+         */
+        public static final int buttonStyle=0x7f0b0092;
+        public static final int generalnotitle=0x7f0b0091;
     }
     public static final class styleable {
         /**  ============================================ 

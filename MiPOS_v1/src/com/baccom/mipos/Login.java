@@ -13,16 +13,18 @@ public class Login extends Activity {
 	    super.onCreate(savedInstanceState);
 	    setContentView(R.layout.login);
 	    
-	    getActionBar().setHomeButtonEnabled(false);
-        getActionBar().setDisplayHomeAsUpEnabled(true);
-        getActionBar().setDisplayShowHomeEnabled(false);
-        getActionBar().setIcon(android.R.color.transparent);
-        getActionBar().setDisplayShowTitleEnabled(false);
+	    getActionBar().hide();
+       
 	}
 	
 	public void login(View view){
 		Intent mainIntent = new Intent(this, MainActivity.class);
 		startActivity(mainIntent);
+	}
+	
+	public void rememberPass(View view){
+		Intent rePa = new Intent(this, RememberPassword.class);
+		startActivity(rePa);
 	}
 	
 

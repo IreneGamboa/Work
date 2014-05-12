@@ -19,6 +19,9 @@ public class DeviceConnect extends Activity {
 	  protected void onCreate(Bundle savedInstanceState) {
 	    super.onCreate(savedInstanceState);
 	    setContentView(R.layout.connnect_device);
+	    
+	    getActionBar().setIcon(android.R.color.transparent);
+		getActionBar().setDisplayShowTitleEnabled(false);
 
 	    TimerTask task = new TimerTask() {
 	      @Override

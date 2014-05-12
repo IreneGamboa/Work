@@ -5,5 +5,43 @@
     android:orientation="vertical" 
     android:background="@drawable/gray_background">
     
+     <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/slide_card"
+        android:textSize="@dimen/text_size_big" 
+        android:textColor="#030A6E"
+       	style="@style/TitleView"/>
+    
+     <TextView
+        android:id="@+id/label1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="left"
+        android:text="@string/label_slide"
+        android:textSize="@dimen/text_size_small" 
+        android:textColor="#111111"
+       	style="@style/TitleView"
+       	android:layout_gravity="center" />
+     
+     <ImageView
+        android:id="@+id/imageDevice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/slide_card"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp">
+        
+    </ImageView>
+    
+    
+    
+    
 
 </LinearLayout>
