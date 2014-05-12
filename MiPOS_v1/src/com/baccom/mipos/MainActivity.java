@@ -9,11 +9,14 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+
 
 
 
@@ -46,6 +49,11 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
+        getSupportActionBar().setHomeButtonEnabled(false);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(false);
+        getSupportActionBar().setIcon(android.R.color.transparent);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
         
 
         mTitle = mDrawerTitle = getTitle();
@@ -70,7 +78,7 @@ public class MainActivity extends ActionBarActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
 
 
-        mToggle = new ActionBarDrawerToggle(this,  mDrawer, R.drawable.ic_launcher,
+        mToggle = new ActionBarDrawerToggle(this,  mDrawer, R.drawable.ic_drawer,
                 R.string.drawer_open, R.string.drawer_close){
             public void onDrawerClosed(View view){
                 getSupportActionBar().setTitle(mTitle);
@@ -105,9 +113,27 @@ public class MainActivity extends ActionBarActivity {
     {
         @Override
         public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-            selectItem(position);
+            //selectItem(position);
+            String option = (String)adapterView.getItemAtPosition(position);
+            selectItem(option, position);
         }
     }
+    
+    private void selectItem(String optionName, int position){
+    	 Fragment venta = new VentaFragment();
+         Fragment ajusteP = new AjustePropina();
+         FragmentManager fragmentManager = getSupportFragmentManager();
+         fragmentManager.beginTransaction().replace(R.id.content_frame, venta).commit();
+         
+    	if(optionName.equals(mOptionsAut[0])){    	
+    		fragmentManager.beginTransaction().replace(R.id.content_frame, venta).commit();
+    		Log.i(optionName, optionName);
+    	} else if(optionName.equals(mOptionsAdmin[0])){
+    		fragmentManager.beginTransaction().replace(R.id.content_frame, ajusteP).commit();	
+   	}
+    	 mDrawerListView.setItemChecked(position, true);
+         mDrawer.closeDrawer(mDrawerListView);
+}
 
     private void selectItem(int position)
     {
@@ -172,4 +198,5 @@ public class MainActivity extends ActionBarActivity {
     	startActivity(deviceC);
 	}
 
+   
 }

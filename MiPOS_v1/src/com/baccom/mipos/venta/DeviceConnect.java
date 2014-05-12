@@ -3,9 +3,9 @@
 import java.util.Timer;
 import java.util.TimerTask;
 
-import com.baccom.mipos.MainActivity;
+
 import com.baccom.mipos.R;
-import com.baccom.mipos.SplashScreenActivity;
+
 
 import android.app.Activity;
 import android.content.Intent;

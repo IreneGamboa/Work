@@ -73,7 +73,7 @@
     </GridLayout>
     
     <Button 
-        android:id="@+id/continueV"
+        android:id="@+id/login"
         android:background="@drawable/gray_button_background"
         android:textStyle="bold"
         android:textColor="#FFFFFF"
@@ -82,6 +82,7 @@
         android:layout_margin="30dp"
         android:text="@string/login"
         android:layout_gravity="center"
+        android:onClick="login"
         />
     
     <TextView

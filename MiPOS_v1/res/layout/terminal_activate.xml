@@ -62,7 +62,7 @@
     </EditText>
     
     <Button 
-        android:id="@+id/continueV"
+        android:id="@+id/activateTerminal"
         android:background="@drawable/gray_button_background"
         android:textStyle="bold"
         android:textColor="#FFFFFF"
@@ -71,6 +71,7 @@
         android:layout_margin="30dp"
         android:text="@string/activate"
         android:layout_gravity="center"
+        android:onClick="activate"
         />
 
 </LinearLayout>

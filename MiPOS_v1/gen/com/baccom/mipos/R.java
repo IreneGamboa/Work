@@ -1129,15 +1129,16 @@ containing a value of this type.
         public static final int gray_background=0x7f02005f;
         public static final int gray_bar_login=0x7f020060;
         public static final int gray_button_background=0x7f020061;
-        public static final int ic_icon=0x7f020062;
-        public static final int ic_launcher=0x7f020063;
-        public static final int options_menu_background=0x7f020064;
-        public static final int options_menu_tableview_header_background=0x7f020065;
-        public static final int rect_edit_text=0x7f020066;
-        public static final int table_view_cell_light_blue_background=0x7f020067;
-        public static final int table_view_header_background=0x7f020068;
-        public static final int tiled_button_pressed_overlay=0x7f020069;
-        public static final int title_bar_background=0x7f02006a;
+        public static final int ic_drawer=0x7f020062;
+        public static final int ic_icon=0x7f020063;
+        public static final int ic_launcher=0x7f020064;
+        public static final int options_menu_background=0x7f020065;
+        public static final int options_menu_tableview_header_background=0x7f020066;
+        public static final int rect_edit_text=0x7f020067;
+        public static final int table_view_cell_light_blue_background=0x7f020068;
+        public static final int table_view_header_background=0x7f020069;
+        public static final int tiled_button_pressed_overlay=0x7f02006a;
+        public static final int title_bar_background=0x7f02006b;
     }
     public static final class id {
         public static final int action_bar=0x7f05001c;
@@ -1151,7 +1152,8 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050024;
-        public static final int action_settings=0x7f050055;
+        public static final int action_settings=0x7f050057;
+        public static final int activateTerminal=0x7f050053;
         public static final int activity_chooser_view_content=0x7f050025;
         public static final int ajustePropina=0x7f050041;
         public static final int always=0x7f05000b;
@@ -1159,7 +1161,7 @@ containing a value of this type.
         public static final int checkbox=0x7f05002d;
         public static final int collapseActionView=0x7f05000d;
         public static final int content_frame=0x7f05003d;
-        public static final int continueV=0x7f05004b;
+        public static final int continueV=0x7f050056;
         public static final int default_activity_button=0x7f050028;
         public static final int devicde=0x7f050043;
         public static final int dialog=0x7f05000e;
@@ -1188,8 +1190,9 @@ containing a value of this type.
         public static final int list=0x7f050042;
         public static final int listMode=0x7f050001;
         public static final int list_item=0x7f050029;
+        public static final int login=0x7f05004b;
         public static final int middle=0x7f050012;
-        public static final int monto=0x7f050053;
+        public static final int monto=0x7f050054;
         public static final int mySwitch=0x7f05004a;
         public static final int never=0x7f050009;
         public static final int none=0x7f050010;
@@ -1224,7 +1227,7 @@ containing a value of this type.
         public static final int up=0x7f050021;
         public static final int useLogo=0x7f050003;
         public static final int user=0x7f050047;
-        public static final int ventaC=0x7f050054;
+        public static final int ventaC=0x7f050055;
         public static final int withText=0x7f05000c;
     }
     public static final class integer {

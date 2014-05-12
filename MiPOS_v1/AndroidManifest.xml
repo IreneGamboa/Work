@@ -34,6 +34,14 @@
             android:name="com.baccom.mipos.venta.SlideCard"
             android:label="@string/app_name" >
         </activity>
+        <activity
+            android:name="com.baccom.mipos.Login"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.baccom.mipos.TerminalActivate"
+            android:label="@string/app_name" >
+        </activity>
     </application>
 
 </manifest>
