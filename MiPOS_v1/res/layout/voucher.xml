@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gray_background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/confirmar_compra"
+        style="@style/TitleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/voucher"
+        android:textSize="@dimen/text_size_big" />
+
+    <TextView
+        android:id="@+id/label1"
+        style="@style/TitleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="left"
+        android:text="@string/label_voucher"
+        android:textColor="#111111"
+        android:textSize="@dimen/text_size_small" />
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/voucher_background" 
+        android:layout_marginTop="2.5dp">
+
+        <ImageView
+            android:id="@+id/imageVoucher"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/voucher_credomatic_gray_logo"
+            android:contentDescription="@string/todo" >
+        </ImageView>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/commerce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/commerce"
+                android:textColor="#858585"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/id_terminal"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/id_terminal"
+                android:textColor="#858585"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dataIdTerminal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/example"
+                android:textColor="#858585"
+                android:textSize="@dimen/text_size_small" />
+            <!-- Debe cambiarse por los datos que se reciben del xml que manda backend -->
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:text="@string/date"
+                android:textColor="#858585"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dataDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/example"
+                android:textColor="#858585"
+                android:textSize="@dimen/text_size_small" />
+            <!-- Debe cambiarse por los datos que se reciben del xml que manda backend -->
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/tarjeta"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:text="@string/tarjeta"
+                android:textColor="#858585"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dataTarjeta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/example"
+                android:textColor="#858585"
+                android:textSize="@dimen/text_size_small" />
+            <!-- Debe cambiarse por los datos que se reciben del xml que manda backend -->
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/reference"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:text="@string/reference"
+                android:textColor="#858585"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dataReference"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/example"
+                android:textColor="#858585"
+                android:textSize="@dimen/text_size_small" />
+            <!-- Debe cambiarse por los datos que se reciben del xml que manda backend -->
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/authorization"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:text="@string/authorization"
+                android:textColor="#858585"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dataAuthorization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/example"
+                android:textColor="#858585"
+                android:textSize="@dimen/text_size_small" />
+            <!-- Debe cambiarse por los datos que se reciben del xml que manda backend -->
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/bill"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:text="@string/bill"
+                android:textColor="#858585"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dataBill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/example"
+                android:textColor="#858585"
+                android:textSize="@dimen/text_size_small" />
+            <!-- Debe cambiarse por los datos que se reciben del xml que manda backend -->
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/sale"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:text="@string/sale"
+                android:textColor="#858585"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dataSale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/example"
+                android:textColor="#858585"
+                android:textSize="@dimen/text_size_small" />
+            <!-- Debe cambiarse por los datos que se reciben del xml que manda backend -->
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow9"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="5dip"
+             >
+
+            <TextView
+                android:id="@+id/taxation"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:text="@string/taxation"
+                android:textColor="#858585"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dataTaxationV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/example"
+                android:textColor="#858585"
+                android:textSize="@dimen/text_size_small" />
+            <!-- Debe cambiarse por los datos que se reciben del xml que manda backend -->
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow10"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/tip"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:text="@string/tip"
+                android:textColor="#858585"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dataTipV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/example"
+                android:textColor="#858585"
+                android:textSize="@dimen/text_size_small" />
+            <!-- Debe cambiarse por los datos que se reciben del xml que manda backend -->
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow11"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:text="@string/total"
+                android:textColor="#858585"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dataTotalV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/example"
+                android:textColor="#858585"
+                android:textSize="@dimen/text_size_small" />
+            <!-- Debe cambiarse por los datos que se reciben del xml que manda backend -->
+
+        </TableRow>
+
+        <TextView android:text="@string/vacio"
+             />
+    </TableLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:columnCount="2"
+        android:layout_marginTop="25dp"
+        android:layout_weight="2" >
+
+        <Button
+            android:id="@+id/sendVoucher1"
+            style="@style/buttonStyle"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="left|bottom"
+            android:layout_row="0"
+            android:background="@drawable/tiled_button_blue_background"
+            android:onClick="sendVoucher"
+            android:text="@string/send_voucher"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/sendVoucher2"
+            style="@style/buttonStyle"
+            android:layout_column="1"
+            android:layout_gravity="left|bottom"
+            android:layout_row="0"
+            android:background="@drawable/tiled_button_arrow_background"
+            android:onClick="sendVoucher" />
+    </GridLayout>
+
+</LinearLayout>

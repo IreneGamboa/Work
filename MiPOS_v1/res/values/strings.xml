@@ -41,5 +41,17 @@
     <string name="tip2">11%</string>
     <string name="tip3">20%</string>
     <string name="make_sale">Realizar Venta</string>
+    <string name="voucher">Recibo</string>
+    <string name="label_voucher">Gracias por su compra, adjunto encontrará el detalle de la transacción</string>
+    <string name="todo">TODO</string>
+    <string name="example">bbb</string>
+    <string name="commerce">Comercio</string>
+    <string name="id_terminal">Terminal ID</string>
+    <string name="reference">Referencia</string>
+    <string name="authorization">Autorizacion</string>
+    <string name="bill">Factura</string>
+    <string name="sale">Venta</string>
+    <string name="date">Fecha</string>
+    <string name="send_voucher">Enviar comprobante</string>
 
 </resources>

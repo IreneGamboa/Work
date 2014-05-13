@@ -1,53 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    style="@style/Theme.FullScreen"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" 
     android:background="@drawable/gray_background"
-    style="@style/Theme.FullScreen">
-    
+    android:orientation="vertical" >
+
     <ImageView
         android:id="@+id/imageTerminalAc"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/credomatic_logo_login"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp">
-        
+        android:layout_marginTop="50dp"
+        android:background="@drawable/credomatic_logo_login"
+        android:contentDescription="@string/todo" >
     </ImageView>
-    
+
     <EditText
         android:id="@+id/user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_margin="15dp"
         android:background="@drawable/rect_edit_text"
         android:ems="10"
         android:gravity="center"
         android:hint="@string/user"
-        android:textColor="#121563" 
-        android:layout_gravity="center">
+        android:textColor="#121563" >
+
         <requestFocus />
     </EditText>
-    
+
     <EditText
         android:id="@+id/passwor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@drawable/rect_edit_text"
         android:ems="10"
         android:gravity="center"
         android:hint="@string/password"
-        android:textColor="#121563" 
-        android:layout_gravity="center">
+        android:textColor="#121563" >
     </EditText>
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:columnCount="4" 
-        android:layout_gravity="center">
+        android:layout_gravity="center"
+        android:columnCount="4" >
 
         <LinearLayout
             android:layout_height="match_parent"
@@ -61,53 +63,53 @@
                 android:layout_height="15dp"
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="25dp"
-                android:background="@drawable/blue_arrow_login" />
+                android:background="@drawable/blue_arrow_login_small"
+                android:contentDescription="@string/todo" />
         </LinearLayout>
 
         <Switch
             android:id="@+id/mySwitch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="@string/remember_user" 
             android:layout_marginLeft="10dp"
-            />
+            android:layout_marginTop="20dp"
+            android:text="@string/remember_user" />
     </GridLayout>
-    
-    <Button 
+
+    <Button
         android:id="@+id/login"
-        android:background="@drawable/gray_button_background"
-        android:textStyle="bold"
-        android:textColor="#FFFFFF"
         android:layout_width="175dp"
         android:layout_height="wrap_content"
-        android:layout_margin="30dp"
-        android:text="@string/login"
         android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:background="@drawable/gray_button_background"
         android:onClick="login"
-        />
-    
+        android:text="@string/login"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
     <Button
         android:id="@+id/terminalAC2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="5dp"
+        android:background="@android:color/transparent"
         android:gravity="center"
-        android:text="@string/remember_password"
-        android:textSize="@dimen/text_size_small" 
-        android:textColor="#030A6E"
-        android:textStyle="bold"
         android:onClick="rememberPass"
-        android:background="@android:color/transparent"/>
+        android:text="@string/remember_password"
+        android:textColor="#030A6E"
+        android:textSize="@dimen/text_size_small"
+        android:textStyle="bold" />
+
     <ImageView
         android:id="@+id/image3"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/gray_bar_login"
         android:layout_gravity="center"
-        android:layout_marginTop="0.5dp">
-        
+        android:layout_marginTop="0.5dp"
+        android:background="@drawable/gray_bar_login"
+        android:contentDescription="@string/todo" >
     </ImageView>
 
 </LinearLayout>
