@@ -1388,7 +1388,7 @@ containing a value of this type.
         public static final int commerce=0x7f050085;
         public static final int confirmar_compra=0x7f050055;
         public static final int content_frame=0x7f05004e;
-        public static final int continueV=0x7f050083;
+        public static final int continueV=0x7f050081;
         public static final int dataAuthorization=0x7f05008d;
         public static final int dataBill=0x7f05008f;
         public static final int dataDate=0x7f050089;
@@ -1443,7 +1443,7 @@ containing a value of this type.
         public static final int makeSale1=0x7f05006d;
         public static final int makeSale2=0x7f05006e;
         public static final int middle=0x7f050024;
-        public static final int monto=0x7f050081;
+        public static final int monto=0x7f050082;
         public static final int mySwitch=0x7f050076;
         public static final int name=0x7f05005a;
         public static final int never=0x7f05001b;
@@ -1509,7 +1509,7 @@ containing a value of this type.
         public static final int up=0x7f050032;
         public static final int useLogo=0x7f050015;
         public static final int user=0x7f050073;
-        public static final int ventaC=0x7f050082;
+        public static final int ventaC=0x7f050083;
         public static final int vertical=0x7f050001;
         public static final int withText=0x7f05001e;
     }
@@ -1658,7 +1658,7 @@ containing a value of this type.
         public static final int sale=0x7f0a003e;
         public static final int send=0x7f0a0021;
         public static final int send_voucher=0x7f0a0040;
-        public static final int simbolo_colones=0x7f0a002e;
+        public static final int simbolo_dolares=0x7f0a002e;
         public static final int slide_card=0x7f0a0024;
         public static final int sub_total=0x7f0a002a;
         public static final int tarjeta=0x7f0a0028;

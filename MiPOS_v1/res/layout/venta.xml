@@ -3,24 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" 
     android:background="@drawable/gray_background">
-
-    <EditText
-        android:id="@+id/monto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/ventaC"
-        android:layout_centerHorizontal="true"
-        android:ems="10"
-        android:hint="@string/exampleV"
-        android:inputType="numberDecimal" 
-        android:gravity="center"
-        android:background="@drawable/rect_edit_text"
-        android:textColor="#121563"
-        android:layout_alignParentLeft="true"
-        android:layout_margin="5dp">
-
-        <requestFocus />
-    </EditText>
     
     <Button 
         android:id="@+id/continueV"
@@ -45,5 +27,19 @@
         android:layout_marginTop="22dp"
         android:text="@string/venta" 
         android:textSize="@dimen/text_size_big"/>
+
+    <EditText
+        android:id="@+id/monto"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ventaC"
+        android:layout_margin="10dp"
+        android:background="@drawable/rect_edit_text"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/exampleV"
+        android:inputType="numberDecimal"
+        android:textColor="#121563" />
 
 </RelativeLayout>

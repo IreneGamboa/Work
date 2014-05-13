@@ -29,7 +29,7 @@
    <!-- ActionBar title text -->
     <style name="MyActionBarTitleText"
            parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
-        <item name="android:background">@drawable/blue</item>
+        <item name="android:textColor">#FFFFFF</item>
         <item name="android:textSize">30sp</item>
         <item name ="android:fontFamily">sans-serif-condensed</item>
         <item name ="android:textStyle">bold|italic</item>

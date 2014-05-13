@@ -34,7 +34,7 @@
     <string name="taxation">Impuestos</string>
     <string name="tip">Propina</string>
     <string name="total">Monto Total</string>
-    <string name="simbolo_colones">₡</string>
+    <string name="simbolo_dolares">USD</string>
     <string name="example_tip">0</string>
     <string name="vacio"/>
     <string name="tip1">6%</string>
