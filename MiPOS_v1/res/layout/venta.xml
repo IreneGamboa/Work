@@ -42,4 +42,16 @@
         android:inputType="numberDecimal"
         android:textColor="#121563" />
 
+    <TextView
+        android:id="@+id/simboloC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/monto"
+        android:layout_alignBottom="@+id/monto"
+        android:layout_toRightOf="@+id/continueV"
+        android:text="@string/simbolo_colones"
+        android:textColor="#030A6E"
+        android:textSize="@dimen/text_size_small"
+        android:textStyle="bold" />
+
 </RelativeLayout>

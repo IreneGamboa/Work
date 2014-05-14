@@ -1,7 +1,7 @@
 package com.baccom.mipos.venta;
 
 import com.baccom.mipos.R;
-
+import com.baccom.mipos.utilities.SignatureVoucher;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,9 +19,9 @@ public class ConfirmSale extends ActionBarActivity {
 		getSupportActionBar().setDisplayShowTitleEnabled(false);
 	}
 	
-	public void makeSale(View view){
-		Intent voucher = new Intent(this, Voucher.class);
-		startActivity(voucher);
+	public void printV(View view){
+		Intent print = new Intent(this, SignatureVoucher.class);
+		startActivity(print);
 	}
 
 }

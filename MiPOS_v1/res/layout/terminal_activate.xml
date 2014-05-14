@@ -10,7 +10,8 @@
         android:id="@+id/imageTerminalAc"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/activate_terminal_header"/>
+        android:background="@drawable/activate_terminal_header"
+         android:contentDescription="@string/todo"/>
 
     <TextView
         android:id="@+id/terminalAC"

@@ -7,53 +7,81 @@
     <uses-sdk
         android:minSdkVersion="16"
         android:targetSdkVersion="19" />
-   
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_icon"
         android:label="@string/app_name"
         android:theme="@style/CustomActionBarTheme" >
-         <activity
+        <activity
             android:name="com.baccom.mipos.SplashScreenActivity"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name="com.baccom.mipos.MainActivity"
-            android:label="@string/app_name" >
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.baccom.mipos.venta.DeviceConnect"
-            android:label="@string/app_name" >
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.baccom.mipos.venta.SlideCard"
-            android:label="@string/app_name" >
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.baccom.mipos.Login"
-            android:label="@string/app_name">
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.baccom.mipos.TerminalActivate"
-            android:label="@string/app_name">
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.baccom.mipos.RememberPassword"
-            android:label="@string/app_name">
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.baccom.mipos.venta.ConfirmSale"
-            android:label="@string/app_name">
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.baccom.mipos.venta.Voucher"
-            android:label="@string/app_name">
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.baccom.mipos.venta.SendVoucher"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.baccom.mipos.utilities.SignatureVoucher"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
         </activity>
     </application>
 

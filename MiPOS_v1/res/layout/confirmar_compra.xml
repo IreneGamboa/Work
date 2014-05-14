@@ -143,7 +143,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/simboloC"
-            android:text="@string/simbolo_dolares"
+            android:text="@string/simbolo_colones"
             android:textColor="#030A6E"
             android:textSize="@dimen/text_size_small"
             android:textStyle="bold" />
@@ -189,7 +189,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/simboloC1"
-            android:text="@string/simbolo_dolares"
+            android:text="@string/simbolo_colones"
             android:textColor="#030A6E"
             android:textSize="@dimen/text_size_small"
             android:textStyle="bold" />
@@ -299,9 +299,9 @@
                  android:layout_width="300dp"
                  android:layout_height="wrap_content"
                  android:layout_marginTop="90dp"
-                 android:layout_weight="150"
+                 
                  android:background="@drawable/tiled_button_blue_background"
-                 android:onClick="makeSale"
+                 android:onClick="printV"
                  android:text="@string/make_sale"
                  android:textColor="#ffffff"
 				/>
@@ -313,16 +313,10 @@
             android:id="@+id/makeSale2"
             android:layout_marginTop="90dp"
             android:background="@drawable/tiled_button_arrow_background"
-            android:onClick="makeSale"
+            android:onClick="printV"
             android:textColor="#030A6E"
             style="@style/buttonStyle" />
     </GridLayout>
        
-        
-        
-        
-        
-    
-    
     
 </TableLayout>

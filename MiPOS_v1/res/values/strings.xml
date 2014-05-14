@@ -53,5 +53,9 @@
     <string name="sale">Venta</string>
     <string name="date">Fecha</string>
     <string name="send_voucher">Enviar comprobante</string>
+    <string name="send_voucher1">Enviar Recibo por Correo Electrónico</string>
+    <string name="label_send_voucher">La copia del voucher se le enviará electronicamente a la dirección que indique a conutinuación</string>
+    <string name="print">Imprimir</string>
+    <string name="simbolo_colones">CRI</string>
 
 </resources>

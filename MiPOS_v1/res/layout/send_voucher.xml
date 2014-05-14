@@ -2,51 +2,49 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@drawable/gray_background" >
-    
+    android:background="@drawable/gray_background"
+    android:orientation="vertical" >
+
     <TextView
-        android:id="@+id/terminalAC2"
+        android:id="@+id/text1"
+        style="@style/TitleView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="5dp"
-        android:gravity="center"
-        android:text="@string/remember_password"
-        android:textSize="@dimen/text_size_big" 
+        android:text="@string/send_voucher1"
         android:textColor="#030A6E"
-       style="@style/TitleView"/>
-    
-     <TextView
+        android:textSize="@dimen/text_size_big" />
+
+    <TextView
         android:id="@+id/label1"
+        style="@style/TitleView"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
         android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
         android:gravity="left"
-        android:text="@string/label_password"
-        android:textSize="@dimen/text_size_small" 
+        android:text="@string/label_send_voucher"
         android:textColor="#111111"
-       	style="@style/TitleView"
-       	android:layout_gravity="center" />
-    
-     <EditText
-        android:id="@+id/idTerminal"
+        android:textSize="@dimen/text_size_small" />
+
+    <EditText
+        android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
+        android:layout_gravity="center"
         android:background="@drawable/rect_edit_text"
         android:ems="10"
         android:gravity="center"
         android:hint="@string/email"
         android:textColor="#121563" 
-        android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        android:inputType="textEmailAddress">
-        <requestFocus />
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="15dp">
     </EditText>
     
-     <Button 
-        android:id="@+id/sendPass"
+    <Button 
+        android:id="@+id/sendVoucher"
         android:background="@drawable/gray_button_background"
         android:textStyle="bold"
         android:textColor="#FFFFFF"
@@ -55,6 +53,19 @@
         android:layout_margin="30dp"
         android:text="@string/send"
         android:layout_gravity="center"
+        android:onClick="sendVoucher"
         />
 
+    <Button 
+        android:id="@+id/printVoucher"
+        android:background="@drawable/gray_button_background"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="@string/print"
+        android:layout_gravity="center"
+        android:onClick="printVoucher"
+        />
 </LinearLayout>
