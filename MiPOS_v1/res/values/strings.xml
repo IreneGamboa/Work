@@ -57,5 +57,9 @@
     <string name="label_send_voucher">La copia del voucher se le enviará electronicamente a la dirección que indique a conutinuación</string>
     <string name="print">Imprimir</string>
     <string name="simbolo_colones">CRI</string>
+    <string name="dialog_confirm_annulation">Confirmar Anulación</string>
+    <string name="dialog_message">¿Está seguro que desea anular la transacion? Esta acción no se puede revertir.</string>
+    <string name="yes">Si</string>
+    <string name="cancel">Cancelar</string>
 
 </resources>

@@ -66,13 +66,13 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.baccom.mipos.venta.Voucher"
+            android:name="com.baccom.mipos.utilities.Voucher"
             android:configChanges="orientation"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.baccom.mipos.venta.SendVoucher"
+            android:name="com.baccom.mipos.utilities.SendVoucher"
             android:configChanges="orientation"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >

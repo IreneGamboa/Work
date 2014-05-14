@@ -3,16 +3,23 @@ package com.baccom.mipos.anulacion;
 
 
 
+import com.baccom.mipos.MainActivity;
 import com.baccom.mipos.R;
+import com.baccom.mipos.utilities.Voucher;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.ExpandableListView;
+import android.widget.ExpandableListView.OnChildClickListener;
 import android.widget.TextView;
 
 public class Anulacion extends Fragment {
@@ -22,6 +29,38 @@ public class Anulacion extends Fragment {
 		View rootView = inflater.inflate(R.layout.anulacion, container, false);
 		ExpandableListView elv = (ExpandableListView) rootView.findViewById(R.id.list);
         elv.setAdapter(new SavedTabsListAdapter());
+        
+     // Listview on child click listener
+        elv.setOnChildClickListener(new OnChildClickListener() {
+
+			@Override
+			public boolean onChildClick(ExpandableListView parent, View v,
+					int groupPosition, int childPosition, long id) {
+				// TODO Auto-generated method stub
+				Log.i("", Integer.toString(childPosition));
+				
+				AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+				builder.setTitle(R.string.dialog_confirm_annulation)
+						.setMessage(R.string.dialog_message)
+						.setPositiveButton(R.string.yes,
+								new DialogInterface.OnClickListener() {
+									public void onClick(DialogInterface dialog, int id) {
+										// FIRE ZE MISSILES!
+										Intent voucher = new Intent(Anulacion.this.getActivity(),Voucher.class);
+										startActivity(voucher);
+									}
+								})
+						.setNegativeButton(R.string.cancel,
+								new DialogInterface.OnClickListener() {
+									public void onClick(DialogInterface dialog, int id) {
+										// User cancelled the dialog
+									}
+								});
+				builder.show();
+				
+				return false;
+			}
+        });
 		return rootView;
 		
 	}

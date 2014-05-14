@@ -1,7 +1,6 @@
 package com.baccom.mipos.utilities;
 
 import com.baccom.mipos.R;
-import com.baccom.mipos.venta.Voucher;
 
 import android.content.Intent;
 import android.graphics.Bitmap;

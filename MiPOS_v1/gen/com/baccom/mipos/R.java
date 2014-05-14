@@ -1639,6 +1639,7 @@ containing a value of this type.
         public static final int app_name=0x7f0a000d;
         public static final int authorization=0x7f0a003c;
         public static final int bill=0x7f0a003d;
+        public static final int cancel=0x7f0a0048;
         public static final int code_activation=0x7f0a0019;
         public static final int code_terminal=0x7f0a0018;
         public static final int commerce=0x7f0a0039;
@@ -1646,6 +1647,8 @@ containing a value of this type.
         public static final int continueV=0x7f0a0012;
         public static final int date=0x7f0a003f;
         public static final int device=0x7f0a0023;
+        public static final int dialog_confirm_annulation=0x7f0a0045;
+        public static final int dialog_message=0x7f0a0046;
         public static final int drawer_close=0x7f0a0010;
         public static final int drawer_open=0x7f0a000f;
         public static final int email=0x7f0a0013;
@@ -1688,6 +1691,7 @@ containing a value of this type.
         public static final int vacio=0x7f0a0030;
         public static final int venta=0x7f0a0014;
         public static final int voucher=0x7f0a0035;
+        public static final int yes=0x7f0a0047;
     }
     public static final class style {
         /** 
