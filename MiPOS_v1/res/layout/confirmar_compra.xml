@@ -213,30 +213,31 @@
  
         <Button
             android:id="@+id/tip1"
-            style="@style/buttonStyle"
+           
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
+           
             android:onClick="sendT1"
             android:text="@string/tip1"
-            android:textColor="#030A6E" />
+            android:textColor="#030A6E"
+            android:background="@drawable/button_stroke_trasparent" />
         
         <Button
             android:id="@+id/tip2"
-            style="@style/buttonStyle"
+            
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
+            android:background="@drawable/button_stroke_trasparent"
             android:onClick="sendT2"
             android:text="@string/tip2"
             android:textColor="#030A6E" />
         
         <Button
             android:id="@+id/tip3"
-            style="@style/buttonStyle"
+            
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
+            android:background="@drawable/button_stroke_trasparent"
             android:onClick="sendT3"
             android:text="@string/tip3"
             android:textColor="#030A6E" />
@@ -295,7 +296,7 @@
 
              <Button
                  android:id="@+id/makeSale1"
-                 style="@style/buttonStyle"
+                 
                  android:layout_width="300dp"
                  android:layout_height="wrap_content"
                  android:layout_marginTop="90dp"
@@ -315,7 +316,7 @@
             android:background="@drawable/tiled_button_arrow_background"
             android:onClick="printV"
             android:textColor="#030A6E"
-            style="@style/buttonStyle" />
+             />
     </GridLayout>
        
     

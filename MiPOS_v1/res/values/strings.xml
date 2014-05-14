@@ -61,5 +61,8 @@
     <string name="dialog_message">¿Está seguro que desea anular la transacion? Esta acción no se puede revertir.</string>
     <string name="yes">Si</string>
     <string name="cancel">Cancelar</string>
+    <string name="account_configuration">ADMINISTRACION DE CUENTA</string>
+    <string name="change_password">Cambiar contraseña</string>
+    <string name="change_pin">Cambiar PIN</string>
 
 </resources>

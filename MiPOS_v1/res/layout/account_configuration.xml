@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gray_background" >
+
+    <TextView
+        android:id="@+id/label1"
+        style="@style/TitleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="22dp"
+        android:gravity="left"
+        android:text="@string/account_configuration"
+        android:textColor="#111111"
+        android:textSize="@dimen/text_size_small" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/label1"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/button_stroke"
+        android:contentDescription="@string/todo"
+        android:text="@string/change_password"
+        android:drawableRight="@drawable/blue_arrow"
+        android:id="@+id/change_password"
+        android:textColor="#030A6E"
+         />
+
+    <Button
+        android:id="@+id/change_pin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/change_password"
+        android:background="@drawable/button_stroke"
+        android:contentDescription="@string/todo"
+        android:drawableRight="@drawable/blue_arrow"
+        android:onClick="changePin"
+        android:text="@string/change_pin"
+        android:textColor="#030A6E" />
+
+</RelativeLayout>

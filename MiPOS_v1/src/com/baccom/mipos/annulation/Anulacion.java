@@ -1,9 +1,9 @@
-package com.baccom.mipos.anulacion;
+package com.baccom.mipos.annulation;
 
 
 
 
-import com.baccom.mipos.MainActivity;
+
 import com.baccom.mipos.R;
 import com.baccom.mipos.utilities.Voucher;
 

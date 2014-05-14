@@ -4,12 +4,12 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
     </style>
-    
+
     <style name="MyTheme" parent="@android:style/Theme.Dialog">
         <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
         <item name="android:textColorPrimary">#000000</item>
     </style>
-    
+
     <style name="CustomAlertDialogStyle">
         <item name="android:bottomBright">@android:color/black</item>
         <item name="android:bottomDark">@android:color/black</item>
@@ -22,35 +22,29 @@
         <item name="android:topBright">@android:color/black</item>
         <item name="android:topDark">@android:color/black</item>
     </style>
-   
-     <style name="Theme.FullScreen" parent="@android:style/Theme.NoTitleBar.Fullscreen"></style>
-     <style name="TitleView" parent="android:Theme.Light">
+
+    <style name="Theme.FullScreen" parent="@android:style/Theme.NoTitleBar.Fullscreen"></style>
+
+    <style name="TitleView" parent="android:Theme.Light">
         <item name="android:layout_width">wrap_content</item>
-        <item name= "android:layout_height">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:layout_centerVertical">true</item>
         <item name="android:textColor">#030A6E</item>
         <item name="android:fontFamily">sans-serif-light</item>
     </style>
-    
-     <style name="Title" parent="android:Theme.Light">
+
+    <style name="Title" parent="android:Theme.Light">
         <item name="android:layout_width">match_parent</item>
-        <item name= "android:layout_height">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
         <item name="android:textColor">#fff</item>
         <item name="android:fontFamily">sans-serif</item>
     </style>
-    
-     <style name="generalnotitle" parent="android:Theme.Light">
-    	<item name="android:windowNoTitle">true</item>
-	</style>	
-	
-     <!-- The button styles -->
-<style name="buttonStyle">
-    <item name="android:textColor">#ffffff</item>
-    <item name="android:background">#80000000</item>
-    <item name="android:button"><shape android:shape="rectangle">
-            <stroke android:width="0.5dp" android:color="#030A6E" />
-        </shape></item>
-</style>
+
+    <style name="generalnotitle" parent="android:Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+   
 
 </resources>

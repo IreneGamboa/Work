@@ -349,7 +349,7 @@
 
         <Button
             android:id="@+id/sendVoucher1"
-            style="@style/buttonStyle"
+            
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_column="0"
@@ -362,7 +362,7 @@
 
         <Button
             android:id="@+id/sendVoucher2"
-            style="@style/buttonStyle"
+           
             android:layout_column="1"
             android:layout_gravity="left|bottom"
             android:layout_row="0"

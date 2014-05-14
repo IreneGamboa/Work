@@ -1,4 +1,4 @@
- package com.baccom.mipos.venta;
+ package com.baccom.mipos.sale;
 
 import java.util.Timer;
 import java.util.TimerTask;

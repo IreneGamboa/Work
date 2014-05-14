@@ -1,4 +1,4 @@
-package com.baccom.mipos.ajuste_propina;
+package com.baccom.mipos.adjustment_tip;
 
 
 

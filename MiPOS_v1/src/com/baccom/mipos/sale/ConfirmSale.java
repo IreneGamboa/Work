@@ -1,4 +1,4 @@
-package com.baccom.mipos.venta;
+package com.baccom.mipos.sale;
 
 import com.baccom.mipos.R;
 import com.baccom.mipos.utilities.SignatureVoucher;

@@ -7,7 +7,7 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.graphics.Path;
+//import android.graphics.Path;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Display;
@@ -22,10 +22,10 @@ public class SignatureVoucher extends ActionBarActivity implements
 	ImageView imageView;
 	private Bitmap bitmap;
 	private Canvas canvas;
-	private Path path, circlePath;
+  //private Path path, circlePath;
 	private Paint paint;
 	float downx = 0, downy = 0, upx = 0, upy = 0;
-	private static final float TOUCH_TOLERANCE = 4;
+	//private static final float TOUCH_TOLERANCE = 4;
 	
 
 	@Override
@@ -52,7 +52,7 @@ public class SignatureVoucher extends ActionBarActivity implements
 		paint.setColor(Color.BLACK);
 		imageView.setImageBitmap(bitmap);
 		imageView.setOnTouchListener(this);
-		path = new Path();
+		//path = new Path();
 		
 	}
 	
