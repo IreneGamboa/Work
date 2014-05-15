@@ -44,6 +44,7 @@
     <style name="generalnotitle" parent="android:Theme.Light">
         <item name="android:windowNoTitle">true</item>
     </style>
+    <string name="dialog_message1">Por favor digite su nuevo monto de propina</string>
 
    
 

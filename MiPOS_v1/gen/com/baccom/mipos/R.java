@@ -1444,7 +1444,7 @@ containing a value of this type.
         public static final int image2=0x7f05007f;
         public static final int image3=0x7f050083;
         public static final int imageDevice=0x7f05007a;
-        public static final int imageTerminalAc=0x7f05007c;
+        public static final int imageTerminalAc=0x7f05007d;
         public static final int imageView1=0x7f050053;
         public static final int imageVoucher=0x7f050092;
         public static final int label1=0x7f05004d;
@@ -1466,7 +1466,7 @@ containing a value of this type.
         public static final int new_password=0x7f05005b;
         public static final int none=0x7f050022;
         public static final int normal=0x7f050012;
-        public static final int option_label=0x7f05007b;
+        public static final int option_label=0x7f05007c;
         public static final int password=0x7f05007e;
         public static final int printVoucher=0x7f050089;
         public static final int progress_circular=0x7f050029;
@@ -1527,7 +1527,7 @@ containing a value of this type.
         public static final int total=0x7f050076;
         public static final int up=0x7f050032;
         public static final int useLogo=0x7f050015;
-        public static final int user=0x7f05007d;
+        public static final int user=0x7f05007b;
         public static final int ventaC=0x7f050091;
         public static final int vertical=0x7f050001;
         public static final int withText=0x7f05001e;
@@ -1591,17 +1591,18 @@ containing a value of this type.
         public static final int change_password=0x7f03001e;
         public static final int confirmar_compra=0x7f03001f;
         public static final int connnect_device=0x7f030020;
-        public static final int list_header=0x7f030021;
-        public static final int list_option=0x7f030022;
-        public static final int login=0x7f030023;
-        public static final int remember_password=0x7f030024;
-        public static final int send_voucher=0x7f030025;
-        public static final int signature_voucher=0x7f030026;
-        public static final int slide_card=0x7f030027;
-        public static final int support_simple_spinner_dropdown_item=0x7f030028;
-        public static final int terminal_activate=0x7f030029;
-        public static final int venta=0x7f03002a;
-        public static final int voucher=0x7f03002b;
+        public static final int dialog_tip=0x7f030021;
+        public static final int list_header=0x7f030022;
+        public static final int list_option=0x7f030023;
+        public static final int login=0x7f030024;
+        public static final int remember_password=0x7f030025;
+        public static final int send_voucher=0x7f030026;
+        public static final int signature_voucher=0x7f030027;
+        public static final int slide_card=0x7f030028;
+        public static final int support_simple_spinner_dropdown_item=0x7f030029;
+        public static final int terminal_activate=0x7f03002a;
+        public static final int venta=0x7f03002b;
+        public static final int voucher=0x7f03002c;
     }
     public static final class menu {
         public static final int home=0x7f0c0000;
@@ -1672,6 +1673,7 @@ containing a value of this type.
         public static final int device=0x7f0a0023;
         public static final int dialog_confirm_annulation=0x7f0a0045;
         public static final int dialog_message=0x7f0a0046;
+        public static final int dialog_message1=0x7f0a0055;
         public static final int drawer_close=0x7f0a0010;
         public static final int drawer_open=0x7f0a000f;
         public static final int email=0x7f0a0013;

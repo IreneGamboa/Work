@@ -73,5 +73,6 @@
     <string name="actual_passcode">PIN actual</string>
     <string name="new_passcode">PIN nuevo</string>
     <string name="label_change_passcode">Cambie el PIN (Personal Identification Number) asociado a su cuenta para realizar operaciones de confirmación, como anualciones y devoluciones</string>
+    
 
 </resources>
