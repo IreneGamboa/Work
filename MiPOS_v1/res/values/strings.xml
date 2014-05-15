@@ -64,5 +64,14 @@
     <string name="account_configuration">ADMINISTRACION DE CUENTA</string>
     <string name="change_password">Cambiar contraseña</string>
     <string name="change_pin">Cambiar PIN</string>
+    <string name="label_change_password">Cambie su contraseña de ingreso a la plataforma. La contraseña debe contener al menos 8 caracteres con mayúsculas, minúsculas y números</string>
+    <string name="confirm_password">Confirmar nueva contraseña</string>
+    <string name="new_password">Nueva contraseña</string>
+    <string name="actual_password">Contraseña actual</string>
+    <string name="change">Cambiar</string>
+    <string name="change_passcode">Cambiar PIN</string>
+    <string name="actual_passcode">PIN actual</string>
+    <string name="new_passcode">PIN nuevo</string>
+    <string name="label_change_passcode">Cambie el PIN (Personal Identification Number) asociado a su cuenta para realizar operaciones de confirmación, como anualciones y devoluciones</string>
 
 </resources>

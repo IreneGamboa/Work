@@ -40,7 +40,9 @@
         android:gravity="center"
         android:hint="@string/exampleV"
         android:inputType="numberDecimal"
-        android:textColor="#121563" />
+        android:textColor="#121563" >
+        <requestFocus />
+        </EditText>
 
     <TextView
         android:id="@+id/simboloC"

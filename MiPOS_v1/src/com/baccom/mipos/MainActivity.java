@@ -19,6 +19,8 @@ import android.widget.ListView;
 import com.baccom.mipos.adjustment_tip.AjustePropina;
 import com.baccom.mipos.annulation.Anulacion;
 import com.baccom.mipos.configuration.AccountConfiguration;
+import com.baccom.mipos.configuration.ChangePasscode;
+import com.baccom.mipos.configuration.ChangePassword;
 import com.baccom.mipos.model.OptionsArrayAdapter;
 import com.baccom.mipos.sale.DeviceConnect;
 import com.baccom.mipos.sale.VentaFragment;
@@ -209,4 +211,13 @@ public class MainActivity extends ActionBarActivity {
 		startActivity(deviceC);
 	}
 
+	public void changePassword(View view){
+		Intent changeP = new Intent (this, ChangePassword.class);
+		startActivity(changeP);
+	}
+
+	public void changePasscode(View view){
+		Intent changeP = new Intent (this, ChangePasscode.class);
+		startActivity(changeP);
+	}
 }

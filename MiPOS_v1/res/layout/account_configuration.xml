@@ -30,6 +30,7 @@
         android:drawableRight="@drawable/blue_arrow"
         android:id="@+id/change_password"
         android:textColor="#030A6E"
+        android:onClick="changePassword"
          />
 
     <Button
@@ -41,8 +42,8 @@
         android:background="@drawable/button_stroke"
         android:contentDescription="@string/todo"
         android:drawableRight="@drawable/blue_arrow"
-        android:onClick="changePin"
-        android:text="@string/change_pin"
-        android:textColor="#030A6E" />
+        android:text="@string/change_passcode"
+        android:textColor="#030A6E"
+        android:onClick="changePasscode" />
 
 </RelativeLayout>
